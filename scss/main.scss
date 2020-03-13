@@ -958,7 +958,7 @@ footer{
     .peoples{
         padding: 0 40px;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         color: $dark;
         padding-bottom: 150px;
         margin-bottom: 180px;
@@ -969,6 +969,10 @@ footer{
             margin-top: 50px;
             position: relative;
             width: 200px;
+            margin-right: 50px;
+            &:nth-child(5){
+                margin-right: 0px;
+            }
             .people_image img{
                 width: 200px;
             }
@@ -1951,6 +1955,13 @@ footer{
         }
     }
     .mainsectors-main{
+        .peoples{
+            padding: 0 30px 140px;
+            .people{
+                margin-right: 25px;
+                
+            }
+        }
         .companies-wrapper{
             .companies{
                 width: 1160px;
@@ -2114,4 +2125,7 @@ footer{
         height: 300px;
         transform: rotate(45deg) scaleY(10) scaleX(10);
     }    
+}
+.yair-p-left{
+    padding-left: 20px;
 }

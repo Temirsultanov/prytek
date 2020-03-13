@@ -721,7 +721,7 @@ footer {
 .mainsectors-main .peoples {
   padding: 0 40px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   color: #2B2B2B;
   padding-bottom: 150px;
   margin-bottom: 180px; }
@@ -730,7 +730,10 @@ footer {
     margin-right: 5px;
     margin-top: 50px;
     position: relative;
-    width: 200px; }
+    width: 200px;
+    margin-right: 50px; }
+    .mainsectors-main .peoples .people:nth-child(5) {
+      margin-right: 0px; }
     .mainsectors-main .peoples .people .people_image img {
       width: 200px; }
     .mainsectors-main .peoples .people h4 {
@@ -1450,6 +1453,10 @@ footer {
       font-size: 18px; }
     .mainsectors-header .header-mainsectors-content .delta p {
       width: 500px; }
+  .mainsectors-main .peoples {
+    padding: 0 30px 140px; }
+    .mainsectors-main .peoples .people {
+      margin-right: 25px; }
   .mainsectors-main .companies-wrapper .companies {
     width: 1160px; }
     .mainsectors-main .companies-wrapper .companies .company {
@@ -1524,5 +1531,8 @@ footer {
     background-color: #000;
     height: 300px;
     transform: rotate(45deg) scaleY(10) scaleX(10); }
+
+.yair-p-left {
+  padding-left: 20px; }
 
 /*# sourceMappingURL=main.css.map */
