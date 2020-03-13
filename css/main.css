@@ -723,7 +723,7 @@ footer {
   display: flex;
   justify-content: center;
   color: #2B2B2B;
-  padding-bottom: 150px;
+  padding-bottom: 210px;
   margin-bottom: 180px; }
   .mainsectors-main .peoples .people {
     margin-left: 5px;
@@ -781,7 +781,7 @@ footer {
           margin-top: 20px; }
     .mainsectors-main .peoples .people:hover .people-text {
       visibility: visible;
-      height: 600px;
+      height: 660px;
       width: 250px;
       background-color: #000;
       transition-delay: visibility 0s; }
@@ -948,7 +948,8 @@ footer {
       width: 580px; }
 
 .mainsectors-main .mainsectors-section4 .peoples {
-  justify-content: center; }
+  justify-content: center;
+  margin-bottom: 0; }
   .mainsectors-main .mainsectors-section4 .peoples .people {
     width: 220px; }
     .mainsectors-main .mainsectors-section4 .peoples .people .people_image img {
