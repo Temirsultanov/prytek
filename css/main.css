@@ -535,8 +535,6 @@ footer {
       box-shadow: 0px 25px 50px rgba(78, 81, 144, 0.07); }
       .main-areas .main-areas-cont .main-areas-box:not(:last-child) {
         margin-right: 40px; }
-      .main-areas .main-areas-cont .main-areas-box:hover {
-        box-shadow: 0px 25px 50px rgba(78, 81, 144, 0.07), 0px 4px 7px rgba(78, 81, 144, 0.15); }
       .main-areas .main-areas-cont .main-areas-box h5 {
         font-weight: bold;
         font-size: 17px;
