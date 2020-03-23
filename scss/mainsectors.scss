@@ -212,7 +212,7 @@ button.cross{
                 align-items: flex-start;
                 transition: transform .3s;
                 height: calc(100% - 40px);
-                // transform: rotateY(180deg);
+                transform: rotateY(180deg);
                 z-index: 5;
                 backface-visibility: hidden;
                 -webkit-backface-visibility: hidden;
