@@ -1,15 +1,21 @@
 var header = document.querySelector('header');
 var onScrollHead = function () {
     if (!logo.classList.contains('logo-act')){
-        burgerTop.classList.remove('burger-white');
-        burgerMiddle.classList.remove('burger-white');
-        burgerBottom.classList.remove('burger-white');
         header.classList.add('black-header');
+        if (header.classList.contains('white-header')){
+            burgerTop.classList.remove('burger-white');
+            burgerMiddle.classList.remove('burger-white');
+            burgerBottom.classList.remove('burger-white');
+            
+            
+        }
         if (pageYOffset == 0) {
             header.classList.remove('black-header');
-            burgerTop.classList.add('burger-white');
-            burgerMiddle.classList.add('burger-white');
-            burgerBottom.classList.add('burger-white');
+            if (header.classList.contains('white-header')){
+                burgerTop.classList.add('burger-white');
+                burgerMiddle.classList.add('burger-white');
+                burgerBottom.classList.add('burger-white');
+            }
         };
     };
 };

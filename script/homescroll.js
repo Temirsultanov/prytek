@@ -87,18 +87,12 @@ if (pageYOffset >= point4) {
 };
 
 window.addEventListener('resize', function(){
-    if (window.innerWidth >= 768) {
-        leftSide.style.transform = "translateX(-120%)";
-        leftSide.style.color = "hsl(0, 0%, 17%)";
-        leftSide.style.backgroundColor = 'white';
-        leftSide.style.boxShadow = '0px 0px 45px rgba(78, 81, 144, 0.15)';
-        left.style.backgroundColor = 'hsl(0, 0%, 100%)';
-        leftLine.style.backgroundColor = 'hsl(0, 0%, 17%)';
-        rightSide.style.transform = "translateX(120%)";
-        rightLine.style.transform = "translateX(30%)";
-        leftLine.style.transform = "translateX(-30%)";
-        window.addEventListener('scroll', onScrollFunc);  
-    } 
+    section2Y = document.querySelector('.section2-home').offsetTop - 102;
+    point1 = document.querySelector('.animation1-container').offsetTop - 206;
+    point2 = document.querySelector('.animation1-container').offsetTop - 6;
+    point3 = document.querySelector('.animation1-wrapper').offsetTop + 194; 
+    point4 = document.querySelector('.button-about').offsetTop - 350;
+    point5 = document.querySelector('.button-about').offsetTop + 100;
     if (window.innerWidth < 768) {
         leftSide.style.transform = "translateX(0%)";
         leftSide.style.color = "hsl(0, 0%, 100%)";
