@@ -2229,7 +2229,7 @@ button:focus {
 @media only screen and (min-width: 1025px) {
   .mainsectors-main .peoples .people:hover .people-text {
     visibility: visible;
-    height: 650px;
+    height: auto;
     width: 250px;
     background-color: #000;
     transition-delay: visibility 0s; }
