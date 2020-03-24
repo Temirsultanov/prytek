@@ -59,7 +59,44 @@
             display: flex;
             margin-bottom: 120px;
             .senior{
-                
+                position: relative;
+                .social-senior{
+                    position: absolute;
+                    right: -40px;
+                    height: 100%;
+                    width: 45px;
+                    .social-wrapper{
+                        background-color: #fff;
+                        width: 45px;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        transform: translateX(-45px);
+                        z-index: -1;
+                        transition: .3s;
+                        a:first-child{
+                            margin-bottom: 25px;
+                            margin-top: -50px;
+                        }
+                        a svg path{
+                            transition: .2s;
+                        }
+                        a:hover svg path{
+                            fill: $blue;
+                        }
+                    }
+                }
+                &:hover{
+                    .social-wrapper{
+                        transform: translateX(0px);
+                    }
+                }
+                .image-senior{
+                    position: relative;
+                    z-index: 0;
+                }
                 &:not(:last-child){
                     margin-right: 150px;
                 }
@@ -120,7 +157,7 @@
                     }
                     .wrapper-senior-text{
                         .senior_text{
-                            width: 200px;
+                            width: 220px;
                             p{
                                 font-size: 16px;
                             }
@@ -211,7 +248,17 @@
                 margin-bottom: 60px;
                 .senior{
                     margin-right: 0;
-                    
+                    .social-senior{
+                        right: 0px;
+                        z-index: 1;
+                        .social-wrapper{
+                            transform: translateX(0);
+                            z-index: 2;
+                            a:first-child{
+                                margin-top: -70px;
+                            }
+                        }
+                    }
                     .image-senior{
                         width: 220px;
                         img{
@@ -219,7 +266,7 @@
                         }
                     }
                     .wrapper-senior-text{
-                        
+                        z-index: 2;
                         .senior_text{
                             width: 220px;
                             margin-left: 0;
@@ -270,6 +317,12 @@
                 .senior{
                     margin-bottom: 40px;
                     width: 155px;
+                    .social-senior{
+                        right: -15px;
+                        .social-wrapper{
+                            width: 30px;
+                        }
+                    }
                     &:first-child{
                         margin-right: 10px;
                     }
