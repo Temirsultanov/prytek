@@ -9,6 +9,19 @@ button.cross {
   cursor: pointer;
   display: none; }
 
+.people_cross {
+  background-color: transparent;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  border: none;
+  font-size: 35px;
+  color: white !important; }
+
+button:focus {
+  outline: none; }
+
 .mainsectors-header {
   background-color: #000;
   color: white;
@@ -50,21 +63,39 @@ button.cross {
   display: flex;
   justify-content: center;
   color: #2B2B2B;
+  flex-wrap: wrap;
+  width: calc(100% - 80px);
   padding-bottom: 150px;
   margin-bottom: 80px; }
-  .mainsectors-main .peoples .peoples-row {
-    display: flex; }
-    .mainsectors-main .peoples .peoples-row .people-hidden {
-      display: none; }
+  .mainsectors-main .peoples .people-row-1 {
+    display: flex;
+    flex-direction: row; }
+    .mainsectors-main .peoples .people-row-1 .people-row-11 {
+      display: flex; }
+    .mainsectors-main .peoples .people-row-1 .people-row-12 {
+      display: flex; }
+      .mainsectors-main .peoples .people-row-1 .people-row-12 .people:last-child {
+        margin-right: 20px; }
+  .mainsectors-main .peoples .people-row-2 {
+    display: flex;
+    flex-direction: row; }
+    .mainsectors-main .peoples .people-row-2 .people-row-21 {
+      display: flex; }
+      .mainsectors-main .peoples .people-row-2 .people-row-21 .people:first-child {
+        display: none; }
+      .mainsectors-main .peoples .people-row-2 .people-row-21 .people:nth-child(3) {
+        display: none; }
+    .mainsectors-main .peoples .people-row-2 .people-row-22 {
+      display: flex; }
+      .mainsectors-main .peoples .people-row-2 .people-row-22 .people:last-child {
+        margin-right: 5px; }
   .mainsectors-main .peoples .people {
     margin-left: 5px;
-    margin-right: 5px;
+    margin-right: 20px;
     margin-top: 50px;
     position: relative;
     width: 200px;
-    margin-right: 50px; }
-    .mainsectors-main .peoples .people:nth-child(5) {
-      margin-right: 0px; }
+    cursor: pointer; }
     .mainsectors-main .peoples .people .people_image img {
       width: 200px; }
     .mainsectors-main .peoples .people h4 {
@@ -89,6 +120,7 @@ button.cross {
       z-index: 1;
       padding-bottom: 40px;
       left: 50%;
+      cursor: default;
       transform: translateX(-50%);
       width: 250px;
       transition: height .3s, background-color .3s;
@@ -98,7 +130,10 @@ button.cross {
         text-align: center;
         font-size: 20px;
         display: none;
+        color: white;
         color: transparent; }
+      .mainsectors-main .peoples .people .people-text button {
+        display: none; }
       .mainsectors-main .peoples .people .people-text > p {
         font-size: 16px;
         display: none; }
@@ -110,17 +145,6 @@ button.cross {
           padding-top: 10px; }
         .mainsectors-main .peoples .people .people-text > p.people-text__subtitle2 {
           margin-top: 20px; }
-    .mainsectors-main .peoples .people:hover .people-text {
-      visibility: visible;
-      height: 650px;
-      width: 250px;
-      background-color: #000;
-      transition-delay: visibility 0s; }
-      .mainsectors-main .peoples .people:hover .people-text h4 {
-        color: white;
-        display: block; }
-      .mainsectors-main .peoples .people:hover .people-text p {
-        display: block; }
 
 .mainsectors-main .companies-wrapper {
   display: flex;
@@ -364,7 +388,8 @@ button.cross {
     .mainsectors-header .header-mainsectors-content .delta p {
       width: 500px; }
   .mainsectors-main .peoples {
-    padding: 0 30px 140px; }
+    padding: 0 30px 140px;
+    width: calc(100% - 60px); }
     .mainsectors-main .peoples .people {
       margin-right: 25px; }
   .mainsectors-main .companies-wrapper .companies {
@@ -469,32 +494,21 @@ button.cross {
   .mainsectors-main .peoples {
     flex-wrap: wrap;
     justify-content: space-evenly; }
-    .mainsectors-main .peoples .peoples-row {
-      justify-content: center; }
-      .mainsectors-main .peoples .peoples-row.peoples-row1 .people:nth-child(1) {
-        margin-right: 0; }
-      .mainsectors-main .peoples .peoples-row.peoples-row2 {
-        flex-basis: 100%;
-        margin-top: 155px; }
-        .mainsectors-main .peoples .peoples-row.peoples-row2 .people .people-text {
-          margin-top: -40px; }
-      .mainsectors-main .peoples .peoples-row .people:nth-child(1) {
-        margin-right: 100px; }
-      .mainsectors-main .peoples .peoples-row .people:hover .people-text {
-        height: 610px; }
+    .mainsectors-main .peoples .people-row-1 .people {
+      margin-right: 30px; }
+    .mainsectors-main .peoples .people-row-1 .people-row-12 .people:last-child {
+      margin-right: 0; }
+    .mainsectors-main .peoples .people-row-2 .people-row-21 .people:nth-child(2) {
+      margin-right: 30px; }
+    .mainsectors-main .peoples .people-row-2 .people-row-22 .people:first-child {
+      margin-right: 30px; }
     .mainsectors-main .peoples .people {
       margin-left: 0;
       margin-right: 0; }
-      .mainsectors-main .peoples .people:nth-child(4) {
-        flex: 2; }
-      .mainsectors-main .peoples .people:nth-child(3) {
-        margin-right: 0; }
       .mainsectors-main .peoples .people .people-text {
         margin-top: -50px; }
         .mainsectors-main .peoples .people .people-text h4 {
-          margin-top: 0px; }
-      .mainsectors-main .peoples .people:hover .people-text {
-        height: 550px; } }
+          margin-top: 0px; } }
 
 .company-text-act {
   visibility: visible !important;
@@ -505,11 +519,74 @@ button.cross {
   top: 0;
   left: 0; }
 
+@media only screen and (min-width: 1025px) {
+  .mainsectors-main .peoples .people:hover .people-text {
+    visibility: visible;
+    height: 650px;
+    width: 250px;
+    background-color: #000;
+    transition-delay: visibility 0s; }
+    .mainsectors-main .peoples .people:hover .people-text h4 {
+      color: white;
+      display: block; }
+    .mainsectors-main .peoples .people:hover .people-text p {
+      display: block; } }
+
 @media only screen and (max-width: 1024px) {
   button.cross {
     display: block; }
-  .mainsectors-main .peoples .peoples-row .people:nth-child(1) {
-    margin-right: 50px; }
+  button.people_cross {
+    display: block; }
+  .mainsectors-main .peoples .people-row-1 .people-row-11 .people:first-child .people-text {
+    transform: translate(-50%, 0); }
+  .mainsectors-main .peoples .people-row-1 .people-row-11 .people:last-child .people-text {
+    transform: translate(-50%, 0); }
+  .mainsectors-main .peoples .people-row-1 .people-row-12 .people:last-child {
+    display: none; }
+  .mainsectors-main .peoples .people-row-1 .people-row-12 .people:first-child {
+    margin-right: 0; }
+    .mainsectors-main .peoples .people-row-1 .people-row-12 .people:first-child .people-text {
+      transform: translate(-50%, 0); }
+  .mainsectors-main .peoples .people-row-1 .people:nth-child(3) {
+    margin-right: 0; }
+  .mainsectors-main .peoples .people-row-2 {
+    flex-direction: column; }
+    .mainsectors-main .peoples .people-row-2 .people-row-21 .people:first-child {
+      display: block;
+      margin-right: 30px; }
+      .mainsectors-main .peoples .people-row-2 .people-row-21 .people:first-child .people-text {
+        transform: translate(-50%, 0); }
+    .mainsectors-main .peoples .people-row-2 .people-row-21 .people:last-child {
+      margin-right: 0; }
+    .mainsectors-main .peoples .people-row-2 .people-row-21 .people:nth-child(2) .people-text {
+      transform: translate(-50%, 0); }
+    .mainsectors-main .peoples .people-row-2 .people-row-22 .people:first-child .people-text {
+      transform: translate(-50%, 0); }
+    .mainsectors-main .peoples .people-row-2 .people-row-22 .people:last-child .people-text {
+      transform: translate(-50%, 0); }
+  .mainsectors-main .peoples .people {
+    position: relative; }
+    .mainsectors-main .peoples .people .people-text {
+      margin: 0;
+      position: absolute;
+      margin-left: auto;
+      transform: translate(-20%, 0%);
+      margin: auto;
+      display: none;
+      height: auto;
+      visibility: visible;
+      background-color: #000;
+      max-width: 340px; }
+      .mainsectors-main .peoples .people .people-text h4 {
+        display: block;
+        color: white;
+        margin-top: 30px; }
+      .mainsectors-main .peoples .people .people-text p {
+        display: block; }
+      .mainsectors-main .peoples .people .people-text .people_cross {
+        display: block; }
+    .mainsectors-main .peoples .people:hover .people-text {
+      display: none; }
   .mainsectors-main .companies-wrapper .companies .company-row {
     width: calc(100% - 64px); }
     .mainsectors-main .companies-wrapper .companies .company-row .company {
@@ -533,6 +610,20 @@ button.cross {
       .mainsectors-main .companies-wrapper .companies .company-row .company:hover img {
         transform: rotateY(0);
         opacity: 1; }
+    .mainsectors-main .companies-wrapper .companies .company-row .company2 {
+      background: #fff; }
+      .mainsectors-main .companies-wrapper .companies .company-row .company2 .company-text {
+        background-color: #fff; }
+    .mainsectors-main .companies-wrapper .companies .company-row .company9 {
+      background-color: #fff; }
+      .mainsectors-main .companies-wrapper .companies .company-row .company9 .company-text {
+        background-color: #fff; }
+    .mainsectors-main .companies-wrapper .companies .company-row .company26 .company-text {
+      background-color: #fff; }
+    .mainsectors-main .companies-wrapper .companies .company-row .company5 {
+      background-color: #fff; }
+      .mainsectors-main .companies-wrapper .companies .company-row .company5 .company-text {
+        background-color: #fff; }
   .mainsectors-main .mainsectors-section3 .mainsectors-section3-wrap .education h2 {
     width: 350px; }
   .mainsectors-main .mainsectors-section3 .mainsectors-section3-wrap .education p {
@@ -578,7 +669,8 @@ button.cross {
   .company-text-act {
     top: 0% !important;
     left: 0% !important;
-    transform: translate(0%, 0%); }
+    transform: translate(0%, 0%);
+    transition: 0s !important; }
   .mainsectors-header {
     padding-bottom: 70px; }
     .mainsectors-header .header-mainsectors-content {
@@ -619,12 +711,18 @@ button.cross {
           line-height: 24px;
           width: 100%;
           margin-bottom: 30px; }
-  .mainsectors-main .mainsectors-section4 .peoples .people {
-    width: 140px; }
-    .mainsectors-main .mainsectors-section4 .peoples .people:nth-child(1) {
-      margin-right: 15px; }
-    .mainsectors-main .mainsectors-section4 .peoples .people .people_image img {
-      width: 150px; }
+  .mainsectors-main .mainsectors-section4 .peoples {
+    padding-right: 20px;
+    padding-left: 20px;
+    width: calc(100% - 40px);
+    flex-direction: row;
+    align-items: flex-start; }
+    .mainsectors-main .mainsectors-section4 .peoples .people {
+      width: 140px; }
+      .mainsectors-main .mainsectors-section4 .peoples .people:nth-child(1) {
+        margin-right: 15px; }
+      .mainsectors-main .mainsectors-section4 .peoples .people .people_image img {
+        width: 140px; }
   .mainsectors-main .last-section-mainsectors h2 {
     font-size: 32px;
     line-height: 42px;
@@ -684,51 +782,46 @@ button.cross {
         width: 50%; }
         .mainsectors-main .companies-wrapper .companies .company-row .company img {
           max-width: calc(100% - 40px); }
-      .mainsectors-main .companies-wrapper .companies .company-row .company2 {
-        background: #fff; }
-        .mainsectors-main .companies-wrapper .companies .company-row .company2 .company-text {
-          background-color: #fff; }
-      .mainsectors-main .companies-wrapper .companies .company-row .company9 {
-        background-color: #fff; }
-        .mainsectors-main .companies-wrapper .companies .company-row .company9 .company-text {
-          background-color: #fff; }
-      .mainsectors-main .companies-wrapper .companies .company-row .company26 .company-text {
-        background-color: #fff; }
-      .mainsectors-main .companies-wrapper .companies .company-row .company5 {
-        background-color: #fff; }
-        .mainsectors-main .companies-wrapper .companies .company-row .company5 .company-text {
-          background-color: #fff; }
   .mainsectors-main .peoples {
     justify-content: center;
-    padding-left: 20px;
-    padding-right: 20px; }
-    .mainsectors-main .peoples .peoples-row {
-      margin-top: 0px; }
-      .mainsectors-main .peoples .peoples-row.peoples-row1 {
-        flex-basis: 100%; }
-        .mainsectors-main .peoples .peoples-row.peoples-row1 .people:nth-child(1) {
-          margin-right: 20px; }
-      .mainsectors-main .peoples .peoples-row.peoples-row2 {
-        margin-top: 50px; }
-    .mainsectors-main .peoples .peoples-row2 .people {
-      margin-left: -170px;
-      margin-top: 0; }
-    .mainsectors-main .peoples .people {
-      position: static;
-      width: 150px; }
-      .mainsectors-main .peoples .people .people-text {
-        margin: 0;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        margin: auto;
-        max-width: 340px; }
-      .mainsectors-main .peoples .people.people-hidden-mobile {
-        display: none; }
-      .mainsectors-main .peoples .people.people-hidden {
-        display: block; }
-      .mainsectors-main .peoples .people:nth-child(1) {
+    padding-left: 15px;
+    padding-right: 20px;
+    width: calc(100% - 40px);
+    flex-direction: column;
+    align-items: center; }
+    .mainsectors-main .peoples .people-row-1 {
+      flex-direction: column; }
+      .mainsectors-main .peoples .people-row-1 .people-row-11 .people:last-child {
+        margin-right: 0; }
+      .mainsectors-main .peoples .people-row-1 .people-row-11 .people:first-child {
         margin-right: 20px; }
+      .mainsectors-main .peoples .people-row-1 .people-row-12 .people:last-child {
+        display: block;
+        margin-left: 20px; }
+    .mainsectors-main .peoples .people-row-1 .people-row-11 .people:first-child .people-text {
+      transform: translate(-20%, 0%); }
+    .mainsectors-main .peoples .people-row-1 .people-row-11 .people:nth-child(2) .people-text {
+      transform: translate(-79%, 0%) !important; }
+    .mainsectors-main .peoples .people-row-1 .people-row-12 .people:first-child .people-text {
+      transform: translate(-20%, 0%); }
+    .mainsectors-main .peoples .people-row-1 .people-row-12 .people:nth-child(2) .people-text {
+      transform: translate(-79%, 0%) !important; }
+    .mainsectors-main .peoples .people-row-2 .people-row-21 .people:last-child .people-text {
+      transform: translate(-79%, 0%) !important; }
+    .mainsectors-main .peoples .people-row-2 .people-row-21 .people:nth-child(2) .people-text {
+      transform: translate(-20%, 0%) !important; }
+    .mainsectors-main .peoples .people-row-2 .people-row-22 .people:nth-child(2) .people-text {
+      transform: translate(-20%, 0%) !important; }
+    .mainsectors-main .peoples .people-row-2 .people-row-21 .people:nth-child(1) {
+      display: none; }
+    .mainsectors-main .peoples .people-row-2 .people-row-21 .people:nth-child(3) {
+      display: block; }
+    .mainsectors-main .peoples .people-row-2 .people-row-21 .people:nth-child(2) {
+      margin-right: 20px; }
+    .mainsectors-main .peoples .people-row-2 .people-row-22 .people:nth-child(1) {
+      display: none; }
+    .mainsectors-main .peoples .people {
+      width: 150px; }
       .mainsectors-main .peoples .people > p {
         font-size: 14px;
         line-height: 20px; }
@@ -740,5 +833,13 @@ button.cross {
         width: 150px; }
         .mainsectors-main .peoples .people .people_image img {
           width: 150px; } }
+
+@media only screen and (max-width: 450px) {
+  .company-text p {
+    font-size: 12px !important;
+    line-height: 19px !important; } }
+
+.people-act {
+  display: block !important; }
 
 /*# sourceMappingURL=mainsectors.css.map */

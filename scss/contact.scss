@@ -92,12 +92,13 @@
                         border-color: $blue;
                     }
                 }
-                .button{
+                .ajax-button{
                     align-self: flex-start;
+                }
+                .button{
                     background-color: #fff;
                     border-color: $dark;
                     color: $dark;
-                    margin-top: 50px;
                     cursor: pointer;
                     svg path{
                         stroke: $dark;
@@ -230,6 +231,9 @@
                     }
                     button{
                         font-size: 14px;
+                        &.loading{
+                            font-size: 0 !important;
+                        }
                     }
                 }   
             }
@@ -443,4 +447,87 @@
         }
         
     }
+}
+.ajax-button{
+    position:relative;
+    display: flex;    
+    justify-content: center;
+    width: 175px;
+    margin-top: 50px;
+    height: 59px;
+}
+.submit{
+    -webkit-appearance: none  !important;
+    -moz-appearance: none !important; 
+    appearance: none;
+    background-color:#fff !important;
+    border:4px solid #2B2B2B !important;
+    border-radius:0px !important;
+    color:#2B2B2B !important;
+    font-size:17px !important;
+    cursor:pointer !important;
+    outline:none !important;
+}
+.submit:hover{
+    background-color:#222222 !important;
+    color: #fff !important;
+}
+.loading{
+    font-size:0 !important;
+    p{
+        font-size: 0 !important;
+    }
+    svg{
+        width: 0;
+    }
+    width:30px !important;
+    height:30px !important;
+    border-radius:15px !important;
+    padding:0 !important;
+    border:4px solid #222222 !important;
+    border-bottom:3px solid rgba(255,255,255,0.0) !important;
+    border-left:3px solid rgba(255,255,255,0.0) !important;
+    background-color:transparent !important;
+    animation-name: rotateAnimation;
+    -webkit-animation-name: wk-rotateAnimation;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    animation-delay: 0.2s;
+    -webkit-animation-delay: 0.2s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    :hover{
+        background-color: transparent !important;
+    }
+}
+  
+@keyframes rotateAnimation {
+    0%   {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+@-webkit-keyframes wk-rotateAnimation {
+    0%   {-webkit-transform: rotate(0deg);}
+    100% {-webkit-transform: rotate(360deg);}
+}
+  
+.fa{
+color:#222222;
+font-size:16px !important;
+position:absolute;
+left:45%;
+// top:60%;
+-webkit-transform:scaleX(0) !important;
+transform:scaleX(0) !important;
+}
+  
+.finish{
+-webkit-transform:scaleX(1) !important;
+transform:scaleX(1) !important;
+}
+.hide-loading{
+opacity:0 !important;
+-webkit-transform: rotate(0deg) !important;
+transform: rotate(0deg) !important;
+-webkit-transform:scale(0) !important;
+transform:scale(0) !important;
 }

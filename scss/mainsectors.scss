@@ -10,6 +10,19 @@ button.cross{
     cursor: pointer;
     display: none;
 }
+.people_cross{
+    background-color: transparent;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    border: none;
+    font-size: 35px;
+    color: white !important;
+}
+button:focus{
+    outline: none;
+}
 .mainsectors-header{
     background-color: #000;
     color: white;
@@ -68,24 +81,50 @@ button.cross{
         display: flex;
         justify-content: center;
         color: $dark;
+        flex-wrap: wrap;
+        width: calc(100% - 80px);    
         padding-bottom: 150px;
         margin-bottom: 80px;
-        .peoples-row{
+        .people-row-1{
             display: flex;
-            .people-hidden{
-                display: none;
+            flex-direction: row;
+            .people-row-11{
+                display: flex;
+            }
+            .people-row-12{
+                display: flex;
+                .people:last-child{
+                    margin-right: 20px;
+                }
+            }
+            
+        }
+        .people-row-2{
+            display: flex;
+            flex-direction: row;
+            .people-row-21{
+                display: flex;
+                .people:first-child{
+                    display: none;
+                }
+                .people:nth-child(3){
+                    display: none;
+                }
+            }
+            .people-row-22{
+                display: flex;
+                .people:last-child{
+                    margin-right: 5px;
+                }
             }
         }
         .people{
             margin-left: 5px;
-            margin-right: 5px;
+            margin-right: 20px;
             margin-top: 50px;
             position: relative;
             width: 200px;
-            margin-right: 50px;
-            &:nth-child(5){
-                margin-right: 0px;
-            }
+            cursor: pointer;
             .people_image img{
                 width: 200px;
             }
@@ -113,6 +152,7 @@ button.cross{
                 z-index: 1;
                 padding-bottom: 40px;
                 left: 50%;
+                cursor: default;
                 transform: translateX(-50%);
                 width: 250px;
                 transition: height .3s, background-color .3s;
@@ -122,9 +162,12 @@ button.cross{
                     text-align: center;
                     font-size: 20px;
                     display: none;
+                    color: white;
                     color: transparent;
                 }
-                
+                button{
+                    display: none;
+                }
                 > p{
                     font-size: 16px;
                     display: none;
@@ -141,27 +184,10 @@ button.cross{
                     }
                 }
             }
-            &:hover{
-                .people-text{
-                    visibility: visible;
-                    height: 650px;
-                    width: 250px;
-                    background-color: #000;
-                    transition-delay: visibility 0s;
-                    h4{
-                        color: white;
-                        display: block;
-                    }
-                    p{
-                        display: block;
-                    }
-                }
-
-            }
-
         }
         
     }
+
     .companies-wrapper{
         display: flex;
         justify-content: center;
@@ -495,6 +521,7 @@ button.cross{
     .mainsectors-main{
         .peoples{
             padding: 0 30px 140px;
+            width: calc(100% - 60px);
             .people{
                 margin-right: 25px;
                 
@@ -671,55 +698,42 @@ button.cross{
         .peoples{
             flex-wrap: wrap;
             justify-content: space-evenly;
-            .peoples-row{
-                &.peoples-row1{
-                    .people:nth-child(1){
+            .people-row-1{
+                .people{
+                    margin-right: 30px;
+                }
+                .people-row-12{
+                    .people:last-child{
                         margin-right: 0;
                     }
                 }
-                &.peoples-row2{
-                    .people{
-                        .people-text{
-                            margin-top: -40px;
-                        }
+            }
+            .people-row-2{
+                .people-row-21{
+                    .people:nth-child(2){
+                        margin-right: 30px;
                     }
-                    flex-basis: 100%;
-                    margin-top: 155px;
                 }
-                justify-content: center;
-                .people{
-                    &:nth-child(1){
-                        margin-right: 100px;
-
-                    }
-                    &:hover{
-                        .people-text{
-                            height: 610px;
-                        }
+                .people-row-22{
+                    .people:first-child{
+                        margin-right: 30px;
                     }
                 }
             }
             .people{
                 margin-left: 0;
                 margin-right: 0;
-                &:nth-child(4){
-                    flex: 2;
-                    
-                }
-                &:nth-child(3){
-                    margin-right: 0;
-                }
                 .people-text{
                     margin-top: -50px;
                     h4{
                         margin-top: 0px;
                     }
                 }
-                &:hover{
-                    .people-text{
-                        height: 550px;
-                    }
-                }
+                // &:hover{
+                //     .people-text{
+                //         // height: 550px;
+                //     }
+                // }
             }
         }   
     }
@@ -733,22 +747,135 @@ button.cross{
     top: 0;
     left: 0;
 }
-
-@media only screen and (max-width: 1024px) {
-    button.cross{
-        display: block;
-    }
+@media only screen and (min-width: 1025px) {
     .mainsectors-main{
         .peoples{
-            .peoples-row{
-                .people{
-                    
-                    &:nth-child(1){
-                        margin-right: 50px;
+            .people{
+                &:hover{
+                    .people-text{
+                        visibility: visible;
+                        height: 650px;
+                        width: 250px;
+                        background-color: #000;
+                        transition-delay: visibility 0s;
+                        h4{
+                            color: white;
+                            display: block;
+                        }
+                        p{
+                            display: block;
+                        }
                     }
                 }
             }
         }
+    }
+}
+@media only screen and (max-width: 1024px) {
+    button.cross{
+        display: block;
+    }
+    button.people_cross{
+        display: block;
+    }
+    .mainsectors-main{
+        .peoples{
+            .people-row-1{
+                .people-row-11{
+                    .people:first-child{
+                        .people-text{
+                            transform: translate(-50%, 0);
+                        }
+                    }
+                    .people:last-child{
+                        .people-text{
+                            transform: translate(-50%, 0);
+                        }
+                    }
+                }
+                .people-row-12{
+                    .people:last-child{
+                        display: none;
+                    }
+                    .people:first-child{
+                        margin-right: 0;
+                        .people-text{
+                            transform: translate(-50%, 0);
+                        }
+
+                    }
+                }
+                
+                .people:nth-child(3){
+                    margin-right: 0;
+                }
+
+            }
+            .people-row-2{
+                flex-direction: column;
+                .people-row-21{
+                    .people:first-child{
+                        display: block;
+                        margin-right: 30px;
+                        .people-text{
+                            transform: translate(-50%, 0);
+                        }
+                    }
+                    .people:last-child{
+                        margin-right: 0;
+                    }
+                    .people:nth-child(2){
+                        .people-text{
+                            transform: translate(-50%, 0);
+                        }
+                    }
+                }
+                .people-row-22{
+                    .people:first-child{
+                        .people-text{
+                            transform: translate(-50%, 0);
+                        }
+                    }
+                    .people:last-child{
+                        .people-text{
+                            transform: translate(-50%, 0);
+                        }
+                    }
+                }
+            }
+            .people{
+                position: relative;
+                .people-text{
+                    margin: 0;
+                    position: absolute;
+                    margin-left: auto;                    
+                    transform: translate(-20%, 0%);
+                    margin: auto;
+                    display: none;
+                    height: auto;
+                    visibility: visible;
+                    background-color: #000;
+                    max-width: 340px;
+                    h4{
+                        display: block;
+                        color: white;
+                        margin-top: 30px;
+                    }          
+                    p{
+                        display: block;
+                    }
+                    .people_cross{
+                        display: block;
+                    }
+                }
+                &:hover{
+                    .people-text{
+                        display: none;                        
+                    }
+                }
+            }
+        }
+        
         .companies-wrapper{
             .companies{
                 .company-row{
@@ -781,6 +908,29 @@ button.cross{
                                 transform: rotateY(0);
                                 opacity: 1;
                             }
+                        }
+                    }
+                    .company2{
+                        background: #fff;
+                        .company-text{
+                            background-color: #fff;
+                        } 
+                    }
+                    .company9{
+                        background-color: #fff;
+                        .company-text{
+                            background-color: #fff;
+                        }
+                    }
+                    .company26{
+                        .company-text{
+                            background-color: #fff;
+                        }
+                    }
+                    .company5{
+                        background-color: #fff;
+                        .company-text{
+                            background-color: #fff;
                         }
                     }
                 }
@@ -856,6 +1006,7 @@ button.cross{
         top: 0% !important;
         left: 0% !important;
         transform: translate(0%, 0%);
+        transition: 0s !important;
     }
     .mainsectors-header{
         padding-bottom: 70px;
@@ -910,17 +1061,24 @@ button.cross{
     .mainsectors-main{
         .mainsectors-section4{
             .peoples{
+                padding-right: 20px;
+                padding-left: 20px;
+                width: calc(100% - 40px);
+                flex-direction: row;
+                align-items: flex-start;
                 .people{
                     width: 140px;
                     &:nth-child(1){
                         margin-right: 15px;
+
                     }
                     .people_image{
                         img{
-                            width: 150px;
+                            width: 140px;
                         }
-                    }
+                    }   
                 }
+                
             }
         }
         .last-section-mainsectors{
@@ -1001,77 +1159,110 @@ button.cross{
                     }
                     .company{
                         width: 50%;
+                        // min-height: 220px;
                         img{
                             max-width: calc(100% - 40px);
                         }
                     }
-                    .company2{
-                        background: #fff;
-                        .company-text{
-                            background-color: #fff;
-                        } 
-                    }
-                    .company9{
-                        background-color: #fff;
-                        .company-text{
-                            background-color: #fff;
-                        }
-                    }
-                    .company26{
-                        .company-text{
-                            background-color: #fff;
-                        }
-                    }
-                    .company5{
-                        background-color: #fff;
-                        .company-text{
-                            background-color: #fff;
-                        }
-                    }
+                    
                 }
             }
         }
         .peoples{
             justify-content: center;
-            padding-left: 20px;
+            padding-left: 15px;
             padding-right: 20px;
-            .peoples-row{
-                margin-top: 0px;
-                &.peoples-row1{
-                    flex-basis: 100%;
-                    .people:nth-child(1){
+            width: calc(100% - 40px);
+            flex-direction: column;
+            align-items: center;
+            .people-row-1{
+                flex-direction: column;
+                .people-row-11{
+                    .people:last-child{
+                        margin-right: 0;
+                    }
+                    .people:first-child{
                         margin-right: 20px;
                     }
                 }
-                &.peoples-row2{
-                    margin-top: 50px;
+                .people-row-12{
+                    .people:last-child{
+                        display: block;
+                        margin-left: 20px;
+                    }
+                }
+                
+            }
+            .people-row-1{
+                .people-row-11{
+                    .people:first-child{
+                        .people-text{
+                            transform: translate(-20%, 0%); 
+
+                        }
+                    }
+                    .people:nth-child(2){
+                        .people-text{
+                            transform: translate(-79%, 0%) !important;
+                        }
+                    }
+                }
+                .people-row-12{
+                    .people:first-child{
+                        .people-text{
+                            transform: translate(-20%, 0%); 
+
+                        }
+                    }
+                    .people:nth-child(2){
+                        .people-text{
+                            transform: translate(-79%, 0%) !important;
+                        }
+                    }
                 }
             }
-            .peoples-row2{
-                .people{
-                    margin-left: -170px;
-                    margin-top: 0;       
+            .people-row-2{
+                .people-row-21{
+                    .people:last-child{
+                        .people-text{
+                            transform: translate(-79%, 0%) !important;
+                        }
+                    }
+                    .people:nth-child(2){
+                        .people-text{
+                            transform: translate(-20%, 0%) !important;
+                        }
+                    }
+                }
+                .people-row-22{
+                    .people:nth-child(2){
+                        .people-text{
+                            transform: translate(-20%, 0%) !important;
+                        }
+                    }  
+                }
+            }
+            .people-row-2{
+                .people-row-21{
+                    .people:nth-child(1){
+                        display: none;                            
+                    }
+                    .people:nth-child(3){
+                        display: block;
+
+                    }
+                    .people:nth-child(2){
+                        margin-right: 20px;
+                    }
+                }
+                .people-row-22{
+                    .people:nth-child(1){
+                        display: none;
+                    }
                 }
             }
             .people{
-                position: static;
-                .people-text{
-                    margin: 0;
-                    position: absolute;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    margin: auto;
-                    max-width: 340px;
-                }
-                &.people-hidden-mobile{
-                    display: none;
-                }
-                &.people-hidden{
-                    display: block;
-                }
-                &:nth-child(1){
-                    margin-right: 20px;
-                }
+                
                 width: 150px;
                 
                 > p{
@@ -1092,4 +1283,15 @@ button.cross{
             }
         }
     }
+}
+@media only screen and (max-width: 450px) {
+    .company-text{
+        p{
+            font-size: 12px !important;
+            line-height: 19px !important;
+        }
+    }
+}
+.people-act{
+    display: block !important;
 }

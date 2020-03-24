@@ -55,9 +55,13 @@
             }
         }
         h1{
-            margin-top: 30px;
+            &:first-child{
+                margin-top: 30px;
+            }
             width: 400px;
-            margin-bottom: 30px;
+            &:last-child{
+                margin-bottom: 30px;
+            }
         }
         h4{
             font-size: 20px;
@@ -71,6 +75,9 @@
                 font-size: 20px;
                 line-height: 40px;
                 width: 660px;
+                .bold{
+                    font-weight: bold;
+                }
             } 
         }
     }
@@ -100,7 +107,9 @@
             h1{
                 font-size: 72px;
                 line-height: 89px;
-                margin-top: 60px;
+                &:first-child{
+                    margin-top: 60px;
+                }
             }
             h4{
                 font-size: 16px;
@@ -127,9 +136,13 @@
             h1{
                 font-size: 64px;
                 line-height: 85px;
-                margin-top: 40px;
-                width: 380px    ;
-                margin-bottom: 20px;
+                &:first-child{
+                    margin-top: 40px;
+                }
+                width: 380px;
+                &:last-child{
+                    margin-bottom: 20px;
+                }
             }
             .back{
                 h5{
@@ -194,40 +207,49 @@
     .profile-main{
         .profile-content{
             .profile-name-photo{
+                height: 111vw;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
                 &.profile-arnon-photo{
-                    height: 600px;
-                    min-height: 100vh;
-                    background-position: 40% 50%;
-                    background-color: #686868;
                     background-image: url(../images/profile/arnon-bg.png);
-                    h1{
-                        margin-top: 300px;
-                    }
                 }
                 &.profile-igor-photo{
-                    min-height: 500px;
-                    h1{
-                        margin-top: 200px; 
-                    }
-                    max-height: 100vh;
-
                     background-image: url(../images/profile/igor-bg.png);
                 }
                 &.profile-andrey-photo{
-                    min-height: 500px;
-                    h1{
-                        margin-top: 200px;
-                    }
-                    max-height: 100vh;
                     background-image: url(../images/profile/andrey-bg.png);
                 }
                 &.profile-yair-photo{
-                    height: 600px;
-                    max-height: 100vh;
-                    h1{
-                        margin-top: 300px;
-                    }
                     background-image: url(../images/profile/yair-bg.png);
+                }
+                &.profile-maria-photo{
+                    background-image: url(../images/profile/maria-bg.png);   
+                }
+                &.profile-guy-photo{
+                    background-image: url(../images/profile/guy-bg.png);   
+                }
+                &.profile-gil-photo{
+                    background-image: url(../images/profile/gil-bg.png);   
+                }
+                &.profile-ariel-photo{
+                    background-image: url(../images/profile/ariel-bg.png);   
+                }
+                &.profile-iftah-photo{
+                    background-image: url(../images/profile/iftah-bg.png);   
+                }
+                &.profile-shomoil-photo{
+                    background-image: url(../images/profile/shomoil-bg.png);   
+                }
+                &.profile-joe-photo{
+                    background-image: url(../images/profile/joe-bg.png);   
+                }
+                &.profile-alexander-photo{
+                    background-image: url(../images/profile/alexander-bg.png);   
+                }
+                &.profile-phina-photo{
+                    background-image: url(../images/profile/phina-bg.png);   
                 }
                 background-size: cover;
                 position: relative;
@@ -238,7 +260,7 @@
                 .back{
                     h5{
                         color: white;
-                        font-size: 16px;
+                        font-size: 18px;
                     }
                     svg path{
                         stroke: white;
@@ -249,9 +271,11 @@
             width: 100%;
             margin-top: 0;
             h1{
-                font-size: 40px;
-                line-height: 60px;
-                margin-top: 90px;
+                font-size: 60px;
+                line-height: 70px;
+                &:first-child{
+                    margin-top: 90px;
+                }
                 width: 320px;
                 color: White;
             }
@@ -298,3 +322,37 @@
         }
     }
 }
+@media only screen and (max-width: 566px){
+    .profile-main{
+        .profile-content{
+            .profile-name-photo{
+                padding-top: 55px;
+                h1{
+                    font-size: 40px;
+                    &:last-child{
+                        margin-bottom: 10px;
+                    }
+                    line-height: 55px;
+                }
+                h4{
+                    font-size: 16px;
+                    
+                }
+                a.back{
+                    margin-top: 40px;
+                }
+            }
+            .profile-gil-photo{
+                h1{
+                    width: 150px;
+                    &:first-child{
+                        margin-top: 70px;
+                    }
+                }
+                h4{
+                    max-width: 300px;
+                }
+            }
+        }
+    }
+}   
