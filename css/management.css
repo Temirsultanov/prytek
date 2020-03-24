@@ -6,7 +6,7 @@
   align-items: center;
   padding-bottom: 0;
   background-position: 50% 50%;
-  min-height: 500px; }
+  min-height: 300px; }
   .management-header .menu-contact a svg {
     animation: arrow-right 3s infinite;
     animation-play-state: paused; }

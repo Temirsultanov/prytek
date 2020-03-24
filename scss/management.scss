@@ -2,13 +2,13 @@
 .management-header{
     background-image: url(../images/management/bg-header.png);
     background-size: cover;
-    height: 100vh;
+    height: 100vh ;
     display: flex;
     align-items: center;
     // box-sizing: border-box;
     padding-bottom: 0;
     background-position: 50% 50%;
-    min-height: 500px;
+    min-height: 300px;
     .menu-contact a{
         svg{
             animation: arrow-right 3s infinite;
