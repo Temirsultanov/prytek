@@ -4,7 +4,6 @@
   height: 100vh;
   display: flex;
   align-items: center;
-  box-sizing: border-box;
   padding-bottom: 0;
   background-position: 50% 50%;
   min-height: 500px; }
@@ -49,7 +48,8 @@
         position: absolute;
         right: -40px;
         height: 100%;
-        width: 45px; }
+        width: 45px;
+        display: none !important; }
         .management-main .seniors-head .seniors-head-row .senior .social-senior .social-wrapper {
           background-color: #fff;
           width: 45px;
@@ -259,16 +259,18 @@
     justify-content: center; }
     .management-main .seniors-head .seniors-head-row-woman .senior:first-child {
       margin-right: 10px; }
-  .management-header .header-management-content {
-    margin-left: 0;
-    width: 300px; }
-    .management-header .header-management-content h1 {
-      font-size: 40px;
-      line-height: 60px;
-      margin-bottom: 10px; }
-    .management-header .header-management-content p {
-      width: 310px;
-      font-size: 15px; }
+  .management-header {
+    background-position: 60% 0%; }
+    .management-header .header-management-content {
+      margin-left: 0;
+      width: 300px; }
+      .management-header .header-management-content h1 {
+        font-size: 40px;
+        line-height: 60px;
+        margin-bottom: 10px; }
+      .management-header .header-management-content p {
+        width: 310px;
+        font-size: 15px; }
   .management-main .seniors-head h2 {
     font-size: 32px;
     line-height: 42px;

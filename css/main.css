@@ -729,7 +729,8 @@ h1, p, h2, h3, h4, h5, h6, a, ul, li {
     padding-left: 20px;
     padding-right: 20px;
     min-height: 100vh;
-    padding-bottom: 50px; }
+    padding-bottom: 50px;
+    background-position: -100% 0; }
     .about-header .header-about-content h1 {
       font-size: 46px;
       line-height: 57px;
@@ -821,7 +822,6 @@ h1, p, h2, h3, h4, h5, h6, a, ul, li {
   height: 100vh;
   display: flex;
   align-items: center;
-  box-sizing: border-box;
   padding-bottom: 0;
   background-position: 50% 50%;
   min-height: 500px; }
@@ -866,7 +866,8 @@ h1, p, h2, h3, h4, h5, h6, a, ul, li {
         position: absolute;
         right: -40px;
         height: 100%;
-        width: 45px; }
+        width: 45px;
+        display: none !important; }
         .management-main .seniors-head .seniors-head-row .senior .social-senior .social-wrapper {
           background-color: #fff;
           width: 45px;
@@ -1076,16 +1077,18 @@ h1, p, h2, h3, h4, h5, h6, a, ul, li {
     justify-content: center; }
     .management-main .seniors-head .seniors-head-row-woman .senior:first-child {
       margin-right: 10px; }
-  .management-header .header-management-content {
-    margin-left: 0;
-    width: 300px; }
-    .management-header .header-management-content h1 {
-      font-size: 40px;
-      line-height: 60px;
-      margin-bottom: 10px; }
-    .management-header .header-management-content p {
-      width: 310px;
-      font-size: 15px; }
+  .management-header {
+    background-position: 60% 0%; }
+    .management-header .header-management-content {
+      margin-left: 0;
+      width: 300px; }
+      .management-header .header-management-content h1 {
+        font-size: 40px;
+        line-height: 60px;
+        margin-bottom: 10px; }
+      .management-header .header-management-content p {
+        width: 310px;
+        font-size: 15px; }
   .management-main .seniors-head h2 {
     font-size: 32px;
     line-height: 42px;
@@ -1795,7 +1798,7 @@ button:focus {
         margin-right: 5px; }
   .mainsectors-main .peoples .people {
     margin-left: 5px;
-    margin-right: 20px;
+    margin-right: 100px;
     margin-top: 50px;
     position: relative;
     width: 200px;
@@ -2484,6 +2487,11 @@ button:focus {
           margin-top: -100px; }
       .mainsectors-main .companies-wrapper .companies .company-row .company {
         width: 50%; }
+        .mainsectors-main .companies-wrapper .companies .company-row .company .company-text h5 {
+          margin-top: 10px; }
+        .mainsectors-main .companies-wrapper .companies .company-row .company .company-text .cross {
+          top: 0px;
+          right: 5px; }
         .mainsectors-main .companies-wrapper .companies .company-row .company img {
           max-width: calc(100% - 40px); }
   .mainsectors-main .peoples {
@@ -2533,6 +2541,14 @@ button:focus {
         font-size: 14px;
         margin-top: 20px;
         line-height: 20px; }
+      .mainsectors-main .peoples .people .people-text p {
+        font-size: 14px; }
+      .mainsectors-main .peoples .people .people-text .people-text__subtitle2 {
+        font-size: 16px; }
+      .mainsectors-main .peoples .people .people-text .people-text__subtitle {
+        font-size: 16px !important; }
+      .mainsectors-main .peoples .people .people-text h4 {
+        font-size: 18px; }
       .mainsectors-main .peoples .people .people_image {
         width: 150px; }
         .mainsectors-main .peoples .people .people_image img {
@@ -2792,7 +2808,16 @@ button:focus {
     .profile-main .profile-content .profile-gil-photo h1:first-child {
       margin-top: 70px; }
   .profile-main .profile-content .profile-gil-photo h4 {
-    max-width: 300px; } }
+    max-width: 300px; }
+  .profile-main .profile-content .profile-alexander-photo {
+    padding-bottom: 10px; }
+    .profile-main .profile-content .profile-alexander-photo .profile-name h1 {
+      font-size: 32px !important;
+      line-height: 45px; }
+    .profile-main .profile-content .profile-alexander-photo .profile-name h4 {
+      margin-bottom: 0;
+      margin-top: 10px;
+      font-size: 15px; } }
 
 .contact-header {
   padding-top: 0; }

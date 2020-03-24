@@ -353,6 +353,20 @@
                     max-width: 300px;
                 }
             }
+            .profile-alexander-photo{
+                padding-bottom: 10px;
+                .profile-name{
+                    h1{
+                        font-size: 32px !important;
+                        line-height: 45px;
+                    }
+                    h4{
+                        margin-bottom: 0;
+                        margin-top: 10px;
+                        font-size: 15px;
+                    }
+                }
+            }
         }
     }
 }   

@@ -244,6 +244,15 @@
     .profile-main .profile-content .profile-gil-photo h1:first-child {
       margin-top: 70px; }
   .profile-main .profile-content .profile-gil-photo h4 {
-    max-width: 300px; } }
+    max-width: 300px; }
+  .profile-main .profile-content .profile-alexander-photo {
+    padding-bottom: 10px; }
+    .profile-main .profile-content .profile-alexander-photo .profile-name h1 {
+      font-size: 32px !important;
+      line-height: 45px; }
+    .profile-main .profile-content .profile-alexander-photo .profile-name h4 {
+      margin-bottom: 0;
+      margin-top: 10px;
+      font-size: 15px; } }
 
 /*# sourceMappingURL=profile.css.map */

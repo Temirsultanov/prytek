@@ -120,7 +120,7 @@ button:focus{
         }
         .people{
             margin-left: 5px;
-            margin-right: 20px;
+            margin-right: 100px;
             margin-top: 50px;
             position: relative;
             width: 200px;
@@ -1159,7 +1159,15 @@ button:focus{
                     }
                     .company{
                         width: 50%;
-                        // min-height: 220px;
+                        .company-text{
+                            h5{
+                                margin-top: 10px;
+                            }
+                            .cross{
+                                top: 0px;
+                                right:5px;
+                            }
+                        }
                         img{
                             max-width: calc(100% - 40px);
                         }
@@ -1273,6 +1281,20 @@ button:focus{
                     font-size: 14px;
                     margin-top: 20px;
                     line-height: 20px;
+                }
+                .people-text{
+                    p{
+                        font-size: 14px;
+                    }
+                    .people-text__subtitle2{
+                        font-size: 16px;
+                    }
+                    .people-text__subtitle{
+                        font-size: 16px !important;
+                    }
+                    h4{
+                        font-size: 18px;
+                    }
                 }
                 .people_image{
                     width: 150px;
