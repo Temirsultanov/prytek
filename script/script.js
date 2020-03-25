@@ -1,4 +1,5 @@
-var header = document.querySelector('header');
+(function () {
+    var header = document.querySelector('header');
 var onScrollHead = function () {
     if (!logo.classList.contains('logo-act')){
         header.classList.add('black-header');
@@ -45,3 +46,4 @@ window.addEventListener('resize', function() {
        onBurgerClick(); 
     }
 })
+}());

@@ -1,4 +1,5 @@
-var infoButton = document.querySelectorAll('.info-image');
+(function () {
+    var infoButton = document.querySelectorAll('.info-image');
 var crossCompany = document.querySelectorAll('.cross');
 var companies = document.querySelectorAll('.company-text');
 var peoples = document.querySelector('.peoples').querySelectorAll('.people');
@@ -49,4 +50,5 @@ window.addEventListener('resize', function(){
             companies[c].classList.remove('company-text-act');
         }
     }
-})
+});
+}());

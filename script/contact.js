@@ -1,4 +1,5 @@
-$(document).ready(function() {
+(function (){
+  $(document).ready(function() {
     $(".submit").click(function(evt) {
         evt.preventDefault();
       $(".submit").addClass("loading");
@@ -15,3 +16,4 @@ $(document).ready(function() {
       }, 5000);
     })
   });
+}())
