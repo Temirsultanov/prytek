@@ -509,6 +509,8 @@ h1, p, h2, h3, h4, h5, h6, a, ul, li {
         text-transform: uppercase;
         margin-top: 30px;
         color: #4E4E4E; }
+      .main-areas .main-areas-cont .main-areas-box:hover {
+        box-shadow: 0px 25px 50px rgba(78, 81, 144, 0.07), 0px 4px 7px rgba(78, 81, 144, 0.15); }
 
 .section2-about {
   overflow: hidden; }
@@ -1813,7 +1815,7 @@ button:focus {
       line-height: 30px; }
     .mainsectors-main .peoples .people p {
       line-height: 30px;
-      font-size: 20px; }
+      font-size: 18px; }
     .mainsectors-main .peoples .people .people-text {
       background-color: transparent;
       color: white;
@@ -1821,9 +1823,9 @@ button:focus {
       flex-direction: column;
       padding-left: 20px;
       height: 0;
-      padding-top: 40px;
       padding: 20px;
       overflow: hidden;
+      padding-top: 0;
       z-index: 1;
       padding-bottom: 40px;
       left: 50%;
@@ -1837,13 +1839,15 @@ button:focus {
         text-align: center;
         font-size: 20px;
         display: none;
+        padding-top: 20px;
         color: white;
         color: transparent; }
       .mainsectors-main .peoples .people .people-text button {
         display: none; }
       .mainsectors-main .peoples .people .people-text > p {
         font-size: 16px;
-        display: none; }
+        display: none;
+        line-height: 26px; }
         .mainsectors-main .peoples .people .people-text > p span {
           font-weight: bold !important; }
         .mainsectors-main .peoples .people .people-text > p .people-text__subtitle {
@@ -1852,6 +1856,8 @@ button:focus {
           padding-top: 10px; }
         .mainsectors-main .peoples .people .people-text > p.people-text__subtitle2 {
           margin-top: 20px; }
+    .mainsectors-main .peoples .people:nth-of-type(1) .people-text p:nth-of-type(2) {
+      margin-bottom: 20px; }
 
 .mainsectors-main .companies-wrapper {
   display: flex;
@@ -2071,11 +2077,12 @@ button:focus {
       color: #A5A5A5; }
 
 .mainsectors-main .companies2 {
-  padding-bottom: 200px; }
+  padding-bottom: 0px; }
 
 .mainsectors-main .last-section-mainsectors {
   display: flex;
   flex-direction: column;
+  padding-top: 200px;
   align-items: center; }
   .mainsectors-main .last-section-mainsectors h2 {
     font-weight: bold;
@@ -2138,17 +2145,19 @@ button:focus {
         line-height: 24px;
         margin-bottom: 25px; }
   .mainsectors-main .companies-wrapper .companies2 {
-    padding-bottom: 120px; }
+    padding-bottom: 0px; }
   .mainsectors-main .companies-wrapper .companies {
     padding-bottom: 120px; }
   .mainsectors-main .mainsectors-section4 .peoples {
     padding-bottom: 0; }
     .mainsectors-main .mainsectors-section4 .peoples .people:first-child {
       margin-right: 60px; }
-  .mainsectors-main .last-section-mainsectors h2 {
-    font-size: 36px;
-    line-height: 55px;
-    margin-bottom: 80px; }
+  .mainsectors-main .last-section-mainsectors {
+    padding-top: 120px; }
+    .mainsectors-main .last-section-mainsectors h2 {
+      font-size: 36px;
+      line-height: 55px;
+      margin-bottom: 80px; }
   .companies-wrapper {
     width: 100%; }
     .companies-wrapper .companies {
@@ -2430,10 +2439,12 @@ button:focus {
         margin-right: 15px; }
       .mainsectors-main .mainsectors-section4 .peoples .people .people_image img {
         width: 140px; }
-  .mainsectors-main .last-section-mainsectors h2 {
-    font-size: 32px;
-    line-height: 42px;
-    margin-bottom: 60px; }
+  .mainsectors-main .last-section-mainsectors {
+    padding-top: 50px; }
+    .mainsectors-main .last-section-mainsectors h2 {
+      font-size: 32px;
+      line-height: 42px;
+      margin-bottom: 60px; }
   .mainsectors-main .mainsectors-section3 {
     padding-top: 80px; }
     .mainsectors-main .mainsectors-section3 .mainsectors-section3-wrap {
@@ -2468,7 +2479,7 @@ button:focus {
     .mainsectors-main .companies-wrapper .companies.companies2 {
       padding-bottom: 0; }
     .mainsectors-main .companies-wrapper .companies.companies2 {
-      margin-bottom: 50px; }
+      margin-bottom: 0px; }
     .mainsectors-main .companies-wrapper .companies .company-row {
       width: 100%;
       justify-content: flex-start;
@@ -2618,14 +2629,22 @@ button:focus {
       font-size: 20px;
       line-height: 30px;
       font-weight: bold;
-      text-transform: uppercase;
-      margin-bottom: 30px; }
-    .profile-main .profile-content ul p {
-      font-size: 20px;
-      line-height: 40px;
-      width: 660px; }
-      .profile-main .profile-content ul p .bold {
-        font-weight: bold; }
+      text-transform: uppercase; }
+      .profile-main .profile-content h4:nth-of-type(1) {
+        margin-top: 10px;
+        margin-bottom: 30px; }
+      .profile-main .profile-content h4.mb0 {
+        margin-bottom: 0; }
+      .profile-main .profile-content h4.mb30 {
+        margin-bottom: 30px; }
+    .profile-main .profile-content ul {
+      list-style: disc; }
+      .profile-main .profile-content ul p {
+        font-size: 20px;
+        line-height: 40px;
+        width: 660px; }
+        .profile-main .profile-content ul p .bold {
+          font-weight: bold; }
 
 @media only screen and (max-width: 1400px) {
   .profile-main .profile-content h1 {
@@ -2923,6 +2942,8 @@ button:focus {
         margin-bottom: 75px; }
       .contact-main .contact-section2 .adresses-row .address:nth-child(2) {
         margin-left: 40px; }
+  .contact-main .mobile-none-address.address200 {
+    margin-left: 40px; }
   .contact-main .address {
     width: 300px; }
     .contact-main .address h5 {
@@ -3186,12 +3207,6 @@ button:focus {
     transform: rotate(0deg); }
   100% {
     transform: rotate(360deg); } }
-
-@-webkit-keyframes wk-rotateAnimation {
-  0% {
-    -webkit-transform: rotate(0deg); }
-  100% {
-    -webkit-transform: rotate(360deg); } }
 
 .fa {
   color: #222222;
@@ -3465,7 +3480,7 @@ footer {
         text-transform: uppercase;
         flex-wrap: wrap;
         flex-direction: column;
-        max-height: 450px;
+        max-height: 540px;
         justify-content: flex-start; }
         footer .footer-main .footer-col-addresses .grid > li:nth-child(4) {
           width: 130px; }
@@ -3581,7 +3596,7 @@ footer {
         justify-content: space-between; }
         footer .footer-main .footer-col-addresses .grid {
           width: 100%;
-          max-height: 330px; }
+          max-height: 370px; }
           footer .footer-main .footer-col-addresses .grid .footer-address:nth-child(5) {
             margin-bottom: 0;
             margin-top: 50px; } }

@@ -137,7 +137,7 @@ button:focus{
             }
             p{
                 line-height: 30px;
-                font-size: 20px;
+                font-size: 18px;
             }
             .people-text{
                 background-color: transparent;
@@ -145,10 +145,10 @@ button:focus{
                 display: flex;
                 flex-direction: column;
                 padding-left: 20px;
-                height: 0;
-                padding-top: 40px;
+                height: 0;    
                 padding: 20px;
                 overflow: hidden;
+                padding-top: 0;
                 z-index: 1;
                 padding-bottom: 40px;
                 left: 50%;
@@ -162,6 +162,7 @@ button:focus{
                     text-align: center;
                     font-size: 20px;
                     display: none;
+                    padding-top: 20px;
                     color: white;
                     color: transparent;
                 }
@@ -171,6 +172,7 @@ button:focus{
                 > p{
                     font-size: 16px;
                     display: none;
+                    line-height: 26px;
                     span {
                         font-weight: bold !important;
                     }
@@ -181,6 +183,16 @@ button:focus{
                     }
                     &.people-text__subtitle2{
                         margin-top: 20px;
+                    }
+                    &:nth-of-type(2){
+                        // margin-bottom: 10px;
+                    }
+                }
+            }
+            &:nth-of-type(1){
+                .people-text{
+                    p:nth-of-type(2){
+                        margin-bottom: 20px;
                     }
                 }
             }
@@ -481,11 +493,12 @@ button:focus{
         }
     }
     .companies2{
-        padding-bottom: 200px;
+        padding-bottom: 0px;
     }
     .last-section-mainsectors{
         display: flex;
         flex-direction: column;
+        padding-top: 200px;
         align-items: center;
         h2{
             font-weight: bold;
@@ -597,7 +610,7 @@ button:focus{
         }
         .companies-wrapper{
             .companies2{
-                padding-bottom: 120px;
+                padding-bottom: 0px;
             }
         }
         .companies-wrapper{
@@ -617,6 +630,7 @@ button:focus{
             }
         }
         .last-section-mainsectors{
+            padding-top: 120px;
             h2{
                 font-size: 36px;
                 line-height: 55px;
@@ -1082,6 +1096,7 @@ button:focus{
             }
         }
         .last-section-mainsectors{
+            padding-top: 50px;
             h2{
                 font-size: 32px;
                 line-height: 42px;
@@ -1135,7 +1150,7 @@ button:focus{
                     padding-bottom: 0;
                 }
                 &.companies2{
-                    margin-bottom: 50px;
+                    margin-bottom: 0px;
                 }
                 .company-row{
                     width: 100%;

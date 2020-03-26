@@ -73,7 +73,7 @@ footer{
                 text-transform: uppercase;
                 flex-wrap: wrap;
                 flex-direction: column;
-                max-height: 450px;
+                max-height: 540px;
                 justify-content: flex-start;  
                 > li:nth-child(1){
                     order: 1;
@@ -244,7 +244,7 @@ footer{
                 justify-content: space-between;
                 .grid{
                     width: 100%;
-                    max-height: 330px;
+                    max-height: 370px;
                     .footer-address:nth-child(5){
                         margin-bottom: 0;
                         margin-top: 50px;

@@ -137,6 +137,9 @@
             }
         }
     }
+    .mobile-none-address.address200{
+        margin-left: 40px;
+    }
     .address{
         width: 300px;
         h5{
@@ -505,11 +508,6 @@
     0%   {transform: rotate(0deg);}
     100% {transform: rotate(360deg);}
 }
-@-webkit-keyframes wk-rotateAnimation {
-    0%   {-webkit-transform: rotate(0deg);}
-    100% {-webkit-transform: rotate(360deg);}
-}
-  
 .fa{
 color:#222222;
 font-size:16px !important;

@@ -52,7 +52,7 @@ footer {
         text-transform: uppercase;
         flex-wrap: wrap;
         flex-direction: column;
-        max-height: 450px;
+        max-height: 540px;
         justify-content: flex-start; }
         footer .footer-main .footer-col-addresses .grid > li:nth-child(4) {
           width: 130px; }
@@ -168,7 +168,7 @@ footer {
         justify-content: space-between; }
         footer .footer-main .footer-col-addresses .grid {
           width: 100%;
-          max-height: 330px; }
+          max-height: 370px; }
           footer .footer-main .footer-col-addresses .grid .footer-address:nth-child(5) {
             margin-bottom: 0;
             margin-top: 50px; } }
