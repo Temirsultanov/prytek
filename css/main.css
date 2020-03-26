@@ -2927,6 +2927,8 @@ button:focus {
             color: white; }
             .contact-main .contact-section1 .form form .button:hover svg path {
               stroke: white; }
+          .contact-main .contact-section1 .form form .button.loading:hover {
+            background-color: #fff !important; }
   .contact-main .contact-section2 {
     display: flex;
     margin-bottom: 100px;
@@ -3188,7 +3190,6 @@ button:focus {
   border-left: 3px solid rgba(255, 255, 255, 0) !important;
   background-color: transparent !important;
   animation-name: rotateAnimation;
-  -webkit-animation-name: wk-rotateAnimation;
   animation-duration: 1s;
   -webkit-animation-duration: 1s;
   animation-delay: 0.2s;
@@ -3200,7 +3201,7 @@ button:focus {
   .loading svg {
     width: 0; }
   .loading :hover {
-    background-color: transparent !important; }
+    background-color: #fff !important; }
 
 @keyframes rotateAnimation {
   0% {

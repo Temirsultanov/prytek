@@ -110,6 +110,11 @@
                             stroke: white;
                         }
                     }
+                    &.loading{
+                        &:hover{
+                            background-color: #fff !important;
+                        }
+                    }
                 }
                 
 
@@ -492,7 +497,7 @@
     border-left:3px solid rgba(255,255,255,0.0) !important;
     background-color:transparent !important;
     animation-name: rotateAnimation;
-    -webkit-animation-name: wk-rotateAnimation;
+    // -webkit-animation-name: wk-rotateAnimation;
     animation-duration: 1s;
     -webkit-animation-duration: 1s;
     animation-delay: 0.2s;
@@ -500,7 +505,7 @@
     animation-iteration-count: infinite;
     -webkit-animation-iteration-count: infinite;
     :hover{
-        background-color: transparent !important;
+        background-color: #fff !important;
     }
 }
   
