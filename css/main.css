@@ -3988,6 +3988,8 @@ h1 {
     .header-menu .logo img {
       width: 100px;
       vertical-align: bottom; }
+    .header-menu .logo svg {
+      width: 100px; }
     .header-menu .menu ul li {
       margin-top: 7px; }
       .header-menu .menu ul li:not(:last-child) {
