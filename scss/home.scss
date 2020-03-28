@@ -10,6 +10,9 @@
     h1{
         margin-left: 180px;
         margin-top: 200px;
+        font-size: 110px;
+        line-height: 110px;
+
     }
 }
 .home4-hidden{
@@ -233,7 +236,7 @@
             }
         }
     }
-    a{
+    > a{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -396,20 +399,25 @@
     .home-4 a h3{
         font-size: 24px;
     }
-    .header-home h1{
+    .header-home h1.h1-1.white{
         margin-left: 120px;
+        font-size: 100px;
+        line-height: 100px;
     }
     
     .header-home{
         min-height: 400px;
+        
     }
 }
 @media only screen and (max-width: 1024px) {     
     .header-home {
         justify-content: center;
-        h1{
+        h1.h1-1.white{
             margin-left: 0;
             width: 740px;
+            font-size: 90px;
+            line-height: 90px;
         }
     }
     .section2-home{
@@ -420,6 +428,9 @@
     }
     .home-4{
         .grid{
+            h3{
+                padding: 0;
+            }
             .right{
                 .bottom{
                     padding-bottom: 50px;
@@ -458,10 +469,11 @@
         display: none;
     }
     .header-home{
-        h1{
-            font-size: 48px; 
-            line-height: 60px;
+        h1.h1-1.white{
+            font-size: 75px; 
+            line-height: 80px;
             width: calc(100% - 40px) !important;
+            max-width: 680px;   
         }
     }
     .home{
@@ -532,6 +544,9 @@
         }
         .grid{
             flex-direction:column-reverse;
+            h3{
+                line-height: 30px !important;
+            }
             .right{
                 width: 100%;
                 .home-4_image2{
@@ -599,9 +614,19 @@
         }
     }
 }
-@media only screen and (max-width: 360px){
+@media only screen and (max-width: 500px) {
     .header-home{
-        h1{
+        h1.h1-1.white{
+            font-size: 52px;
+            line-height: 60px;
+            margin-top: 100px;
+            width: calc(100% - 40px) !important;
+        }
+    }
+}
+@media only screen and (max-width: 359px){
+    .header-home{
+        h1.h1-1.white{
             font-size: 46px;
         }
     }

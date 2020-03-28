@@ -9,6 +9,10 @@
   background-position: 100% 100%;
   background-repeat: no-repeat;
   background-size: cover; }
+  .article-header.invest-header {
+    background-image: url(../images/article/bg-header2.jpg); }
+  .article-header.investment-header {
+    background-image: url(../images/article/bg-header3.jpg); }
   .article-header .menu-contact a svg {
     animation: arrow-right 3s infinite;
     animation-play-state: paused; }
@@ -28,7 +32,8 @@
       font-size: 17px;
       margin-bottom: 5px; }
     .article-header .article-header-content h1 {
-      font-size: 48px; }
+      font-size: 48px;
+      line-height: 60px; }
 
 .article-main {
   display: flex;
@@ -45,13 +50,32 @@
       font-size: 17px;
       line-height: 30px;
       letter-spacing: 0.323px; }
-    .article-main .article-main-wrap .p-first {
+    .article-main .article-main-wrap p.p-first {
       margin-bottom: 70px; }
+      .article-main .article-main-wrap p.p-first.invest {
+        font-weight: bold;
+        margin-bottom: 30px;
+        margin-top: 0; }
+        .article-main .article-main-wrap p.p-first.invest .italic {
+          font-style: italic;
+          font-weight: normal; }
     .article-main .article-main-wrap .p1 {
       display: block; }
     .article-main .article-main-wrap .p2 {
       margin-bottom: 70px;
       padding-right: 30px; }
+    .article-main .article-main-wrap .image-invest {
+      margin-top: 40px;
+      margin-bottom: 40px;
+      text-align: right; }
+      .article-main .article-main-wrap .image-invest img {
+        width: 100%; }
+      .article-main .article-main-wrap .image-invest span {
+        color: #A5A5A5;
+        font-style: italic;
+        display: inline-block;
+        margin-top: 20px;
+        margin-right: 40px; }
     .article-main .article-main-wrap .article-main-wrap__title1 {
       display: flex;
       margin-bottom: 70px; }
@@ -97,6 +121,15 @@
     .article-main .article-main-wrap .title5 {
       margin-top: 60px;
       margin-bottom: 20px; }
+  .article-main.invest-main .article-main-wrap p {
+    margin-top: 30px; }
+    .article-main.invest-main .article-main-wrap p a {
+      color: #33acb2;
+      transition: .2s; }
+      .article-main.invest-main .article-main-wrap p a:hover {
+        color: #0080FF; }
+  .article-main.invest-main .article-main-wrap h3 {
+    margin-top: 40px; }
   .article-main .article-image2 {
     margin-top: 40px;
     margin-bottom: 40px; }
@@ -150,7 +183,8 @@
     background-position: 0% 50%; }
     .article-header .article-header-content h1 {
       font-size: 36px;
-      line-height: 55px; }
+      line-height: 45px;
+      padding-right: 80px; }
     .article-header .article-header-content p {
       font-size: 14px;
       line-height: 24px; }
@@ -293,6 +327,10 @@
       margin-bottom: 20px; }
     .article-main .article-main-wrap .title5 {
       margin-top: 40px; }
+  .article-main.invest-main .article-main-wrap p {
+    margin-top: 20px; }
+  .article-main.invest-main .article-main-wrap h3 {
+    margin-top: 30px; }
   .article-main .article-image2 {
     margin-top: 40px;
     margin-bottom: 40px; }
@@ -332,18 +370,19 @@
     background-size: cover;
     height: 100vh;
     background-position: 30% 50%;
-    justify-content: flex-end;
+    justify-content: center;
     display: flex; }
     .article-header .article-header-content {
       width: 100%;
       margin-top: 0;
       padding-bottom: 0;
       justify-content: center;
+      margin-top: 100px;
       min-height: 400px;
       margin-left: 0; }
       .article-header .article-header-content h1 {
         font-size: 32px;
-        line-height: 42px;
+        line-height: 40px;
         padding-right: 20px;
         padding-left: 20px; }
       .article-header .article-header-content p {

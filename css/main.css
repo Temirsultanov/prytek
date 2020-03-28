@@ -23,7 +23,9 @@ h1, p, h2, h3, h4, h5, h6, a, ul, li {
   min-height: 600px; }
   .header-home h1 {
     margin-left: 180px;
-    margin-top: 200px; }
+    margin-top: 200px;
+    font-size: 110px;
+    line-height: 110px; }
 
 .home4-hidden {
   display: none; }
@@ -202,17 +204,17 @@ h1, p, h2, h3, h4, h5, h6, a, ul, li {
           padding: 30px 50px;
           font-size: 26px;
           line-height: 40px; }
-  .home-4 a {
+  .home-4 > a {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #2B2B2B; }
-    .home-4 a .arrow-media {
+    .home-4 > a .arrow-media {
       animation: arrow-right 3s infinite;
       animation-play-state: paused; }
-    .home-4 a:hover .arrow-media {
+    .home-4 > a:hover .arrow-media {
       animation-play-state: running; }
-    .home-4 a h3 {
+    .home-4 > a h3 {
       font-weight: bold;
       font-size: 28px;
       padding: 55px;
@@ -220,7 +222,7 @@ h1, p, h2, h3, h4, h5, h6, a, ul, li {
       color: white;
       margin-left: -30px;
       line-height: 40px; }
-    .home-4 a svg path {
+    .home-4 > a svg path {
       stroke: white; }
 
 .anime-wrapper {
@@ -311,20 +313,26 @@ h1, p, h2, h3, h4, h5, h6, a, ul, li {
       line-height: 26px; }
   .home-4 a h3 {
     font-size: 24px; }
-  .header-home h1 {
-    margin-left: 120px; }
+  .header-home h1.h1-1.white {
+    margin-left: 120px;
+    font-size: 100px;
+    line-height: 100px; }
   .header-home {
     min-height: 400px; } }
 
 @media only screen and (max-width: 1024px) {
   .header-home {
     justify-content: center; }
-    .header-home h1 {
+    .header-home h1.h1-1.white {
       margin-left: 0;
-      width: 740px; }
+      width: 740px;
+      font-size: 90px;
+      line-height: 90px; }
   .section2-home h2 {
     width: 740px;
     font-size: 34px; }
+  .home-4 .grid h3 {
+    padding: 0; }
   .home-4 .grid .right .bottom {
     padding-bottom: 50px; }
   .home-4 .grid .left .top .home-4_text {
@@ -344,10 +352,11 @@ h1, p, h2, h3, h4, h5, h6, a, ul, li {
 @media only screen and (max-width: 767px) {
   .anime-wrapper {
     display: none; }
-  .header-home h1 {
-    font-size: 48px;
-    line-height: 60px;
-    width: calc(100% - 40px) !important; }
+  .header-home h1.h1-1.white {
+    font-size: 75px;
+    line-height: 80px;
+    width: calc(100% - 40px) !important;
+    max-width: 680px; }
   .home .section2-home {
     background-color: #000;
     padding-top: 75px; }
@@ -398,6 +407,8 @@ h1, p, h2, h3, h4, h5, h6, a, ul, li {
     padding-left: 20px; }
   .home-4 .grid {
     flex-direction: column-reverse; }
+    .home-4 .grid h3 {
+      line-height: 30px !important; }
     .home-4 .grid .right {
       width: 100%; }
       .home-4 .grid .right .home-4_image2 {
@@ -446,8 +457,15 @@ h1, p, h2, h3, h4, h5, h6, a, ul, li {
           font-size: 20px;
           line-height: 144%; } }
 
-@media only screen and (max-width: 360px) {
-  .header-home h1 {
+@media only screen and (max-width: 500px) {
+  .header-home h1.h1-1.white {
+    font-size: 52px;
+    line-height: 60px;
+    margin-top: 100px;
+    width: calc(100% - 40px) !important; } }
+
+@media only screen and (max-width: 359px) {
+  .header-home h1.h1-1.white {
     font-size: 46px; }
   .home .animation2 > p {
     width: 300px;
@@ -1257,6 +1275,10 @@ h1, p, h2, h3, h4, h5, h6, a, ul, li {
   background-position: 100% 100%;
   background-repeat: no-repeat;
   background-size: cover; }
+  .article-header.invest-header {
+    background-image: url(../images/article/bg-header2.jpg); }
+  .article-header.investment-header {
+    background-image: url(../images/article/bg-header3.jpg); }
   .article-header .menu-contact a svg {
     animation: arrow-right 3s infinite;
     animation-play-state: paused; }
@@ -1276,7 +1298,8 @@ h1, p, h2, h3, h4, h5, h6, a, ul, li {
       font-size: 17px;
       margin-bottom: 5px; }
     .article-header .article-header-content h1 {
-      font-size: 48px; }
+      font-size: 48px;
+      line-height: 60px; }
 
 .article-main {
   display: flex;
@@ -1293,13 +1316,32 @@ h1, p, h2, h3, h4, h5, h6, a, ul, li {
       font-size: 17px;
       line-height: 30px;
       letter-spacing: 0.323px; }
-    .article-main .article-main-wrap .p-first {
+    .article-main .article-main-wrap p.p-first {
       margin-bottom: 70px; }
+      .article-main .article-main-wrap p.p-first.invest {
+        font-weight: bold;
+        margin-bottom: 30px;
+        margin-top: 0; }
+        .article-main .article-main-wrap p.p-first.invest .italic {
+          font-style: italic;
+          font-weight: normal; }
     .article-main .article-main-wrap .p1 {
       display: block; }
     .article-main .article-main-wrap .p2 {
       margin-bottom: 70px;
       padding-right: 30px; }
+    .article-main .article-main-wrap .image-invest {
+      margin-top: 40px;
+      margin-bottom: 40px;
+      text-align: right; }
+      .article-main .article-main-wrap .image-invest img {
+        width: 100%; }
+      .article-main .article-main-wrap .image-invest span {
+        color: #A5A5A5;
+        font-style: italic;
+        display: inline-block;
+        margin-top: 20px;
+        margin-right: 40px; }
     .article-main .article-main-wrap .article-main-wrap__title1 {
       display: flex;
       margin-bottom: 70px; }
@@ -1345,6 +1387,15 @@ h1, p, h2, h3, h4, h5, h6, a, ul, li {
     .article-main .article-main-wrap .title5 {
       margin-top: 60px;
       margin-bottom: 20px; }
+  .article-main.invest-main .article-main-wrap p {
+    margin-top: 30px; }
+    .article-main.invest-main .article-main-wrap p a {
+      color: #33acb2;
+      transition: .2s; }
+      .article-main.invest-main .article-main-wrap p a:hover {
+        color: #0080FF; }
+  .article-main.invest-main .article-main-wrap h3 {
+    margin-top: 40px; }
   .article-main .article-image2 {
     margin-top: 40px;
     margin-bottom: 40px; }
@@ -1398,7 +1449,8 @@ h1, p, h2, h3, h4, h5, h6, a, ul, li {
     background-position: 0% 50%; }
     .article-header .article-header-content h1 {
       font-size: 36px;
-      line-height: 55px; }
+      line-height: 45px;
+      padding-right: 80px; }
     .article-header .article-header-content p {
       font-size: 14px;
       line-height: 24px; }
@@ -1541,6 +1593,10 @@ h1, p, h2, h3, h4, h5, h6, a, ul, li {
       margin-bottom: 20px; }
     .article-main .article-main-wrap .title5 {
       margin-top: 40px; }
+  .article-main.invest-main .article-main-wrap p {
+    margin-top: 20px; }
+  .article-main.invest-main .article-main-wrap h3 {
+    margin-top: 30px; }
   .article-main .article-image2 {
     margin-top: 40px;
     margin-bottom: 40px; }
@@ -1580,18 +1636,19 @@ h1, p, h2, h3, h4, h5, h6, a, ul, li {
     background-size: cover;
     height: 100vh;
     background-position: 30% 50%;
-    justify-content: flex-end;
+    justify-content: center;
     display: flex; }
     .article-header .article-header-content {
       width: 100%;
       margin-top: 0;
       padding-bottom: 0;
       justify-content: center;
+      margin-top: 100px;
       min-height: 400px;
       margin-left: 0; }
       .article-header .article-header-content h1 {
         font-size: 32px;
-        line-height: 42px;
+        line-height: 40px;
         padding-right: 20px;
         padding-left: 20px; }
       .article-header .article-header-content p {
