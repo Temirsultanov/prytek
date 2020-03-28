@@ -7,7 +7,9 @@
   min-height: 600px; }
   .header-home h1 {
     margin-left: 180px;
-    margin-top: 200px; }
+    margin-top: 200px;
+    font-size: 110px;
+    line-height: 110px; }
 
 .home4-hidden {
   display: none; }
@@ -186,17 +188,17 @@
           padding: 30px 50px;
           font-size: 26px;
           line-height: 40px; }
-  .home-4 a {
+  .home-4 > a {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #2B2B2B; }
-    .home-4 a .arrow-media {
+    .home-4 > a .arrow-media {
       animation: arrow-right 3s infinite;
       animation-play-state: paused; }
-    .home-4 a:hover .arrow-media {
+    .home-4 > a:hover .arrow-media {
       animation-play-state: running; }
-    .home-4 a h3 {
+    .home-4 > a h3 {
       font-weight: bold;
       font-size: 28px;
       padding: 55px;
@@ -204,7 +206,7 @@
       color: white;
       margin-left: -30px;
       line-height: 40px; }
-    .home-4 a svg path {
+    .home-4 > a svg path {
       stroke: white; }
 
 .anime-wrapper {
@@ -295,20 +297,26 @@
       line-height: 26px; }
   .home-4 a h3 {
     font-size: 24px; }
-  .header-home h1 {
-    margin-left: 120px; }
+  .header-home h1.h1-1.white {
+    margin-left: 120px;
+    font-size: 100px;
+    line-height: 100px; }
   .header-home {
     min-height: 400px; } }
 
 @media only screen and (max-width: 1024px) {
   .header-home {
     justify-content: center; }
-    .header-home h1 {
+    .header-home h1.h1-1.white {
       margin-left: 0;
-      width: 740px; }
+      width: 740px;
+      font-size: 90px;
+      line-height: 90px; }
   .section2-home h2 {
     width: 740px;
     font-size: 34px; }
+  .home-4 .grid h3 {
+    padding: 0; }
   .home-4 .grid .right .bottom {
     padding-bottom: 50px; }
   .home-4 .grid .left .top .home-4_text {
@@ -328,10 +336,11 @@
 @media only screen and (max-width: 767px) {
   .anime-wrapper {
     display: none; }
-  .header-home h1 {
-    font-size: 48px;
-    line-height: 60px;
-    width: calc(100% - 40px) !important; }
+  .header-home h1.h1-1.white {
+    font-size: 75px;
+    line-height: 80px;
+    width: calc(100% - 40px) !important;
+    max-width: 680px; }
   .home .section2-home {
     background-color: #000;
     padding-top: 75px; }
@@ -382,6 +391,8 @@
     padding-left: 20px; }
   .home-4 .grid {
     flex-direction: column-reverse; }
+    .home-4 .grid h3 {
+      line-height: 30px !important; }
     .home-4 .grid .right {
       width: 100%; }
       .home-4 .grid .right .home-4_image2 {
@@ -430,8 +441,15 @@
           font-size: 20px;
           line-height: 144%; } }
 
-@media only screen and (max-width: 360px) {
-  .header-home h1 {
+@media only screen and (max-width: 500px) {
+  .header-home h1.h1-1.white {
+    font-size: 52px;
+    line-height: 60px;
+    margin-top: 100px;
+    width: calc(100% - 40px) !important; } }
+
+@media only screen and (max-width: 359px) {
+  .header-home h1.h1-1.white {
     font-size: 46px; }
   .home .animation2 > p {
     width: 300px;

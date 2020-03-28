@@ -10,6 +10,12 @@
     background-position: 100% 100%;
     background-repeat: no-repeat;
     background-size: cover;
+    &.invest-header{
+        background-image: url(../images/article/bg-header2.jpg);
+    }
+    &.investment-header{
+        background-image: url(../images/article/bg-header3.jpg);
+    }
     .menu-contact a{
         svg{
             animation: arrow-right 3s infinite;
@@ -39,6 +45,7 @@
         }
         h1{
             font-size: 48px;
+            line-height: 60px;
         }
     }
 }
@@ -58,8 +65,18 @@
             line-height: 30px;
             letter-spacing: 0.323px;
         }
-        .p-first{
+        p.p-first{
             margin-bottom: 70px;
+            
+            &.invest{
+                font-weight: bold;
+                margin-bottom: 30px;
+                margin-top: 0;
+                .italic{
+                    font-style: italic;
+                    font-weight: normal;
+                }
+            }
         }
         .p1{
             display: block;
@@ -67,6 +84,21 @@
         .p2{
             margin-bottom: 70px;
             padding-right: 30px;
+        }
+        .image-invest{
+            margin-top: 40px;
+            margin-bottom: 40px;
+            text-align: right;
+            img{
+                width: 100%;
+            }
+            span{
+                color: $grey;
+                font-style: italic;
+                display: inline-block;
+                margin-top: 20px;
+                margin-right: 40px;
+            }
         }
         .article-main-wrap__title1{
             display: flex;
@@ -126,6 +158,23 @@
             margin-top: 60px;
             margin-bottom: 20px;
         }
+    }
+    &.invest-main{
+        .article-main-wrap{
+            p{
+                margin-top: 30px;
+                a{
+                    color: rgb(51,172,178);
+                    transition: .2s;
+                    &:hover{
+                        color: $blue;
+                    }
+                }
+            }
+            h3{
+                margin-top: 40px;
+            }       
+        }   
     }
     .article-image2{            
         margin-top: 40px;
@@ -188,6 +237,7 @@
         align-self: center;
         margin-top: 140px;
         margin-bottom: 70px;
+        
     }
 
 }
@@ -197,7 +247,8 @@
         .article-header-content{
             h1{
                 font-size: 36px;
-                line-height: 55px;
+                line-height: 45px;
+                padding-right: 80px;
             }
             p{
                 font-size: 14px;
@@ -414,6 +465,16 @@
             }
             
         }
+        &.invest-main{
+            .article-main-wrap{
+                p{
+                    margin-top: 20px;
+                }
+                h3{
+                    margin-top: 30px;
+                }       
+            }   
+        }
         .article-image2{
             margin-top: 40px;
             margin-bottom: 40px;                
@@ -470,21 +531,22 @@
         background-size: cover;
         height: 100vh;
         background-position:30% 50%;
-        justify-content: flex-end;
+        justify-content: center;
+        
         display: flex;
         .article-header-content{
             width: 100%;
             margin-top: 0;
             padding-bottom: 0;
             justify-content: center;
-
+            margin-top: 100px;
             
             min-height: 400px;
             margin-left: 0;
             
             h1{
                 font-size: 32px;
-                line-height: 42px;
+                line-height: 40px;
                 padding-right: 20px;
                 padding-left: 20px;
             }
