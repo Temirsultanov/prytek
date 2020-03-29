@@ -2,7 +2,7 @@
 
 @import 'vars.scss';
 .contact-header{
-    padding-top: 0; 
+    padding-top: 0;
 }
 .address-mobile{
     display: none;
@@ -62,8 +62,8 @@
                     &:focus{
                         border-color: $blue;
                     }
-                    
-                   
+
+
                 }
                 textarea{
                     resize: none;
@@ -116,15 +116,15 @@
                         }
                     }
                 }
-                
+
 
             }
-            
+
         }
     }
     .contact-section2{
         display: flex;
-        margin-bottom: 100px;        
+        margin-bottom: 100px;
         margin-top: 140px;
         .map-side{
             margin-right: 60px;
@@ -147,16 +147,20 @@
     }
     .address{
         width: 300px;
+
+        line-height: 40px;
+        font-size: 20px;
+
+        a {
+            text-decoration: underline;
+        }
+
         h5{
             font-size: 17px;
             line-height: 30px;
             text-transform: uppercase;
             font-weight: bold;
             margin-bottom: 15px;
-        }
-        p{
-            line-height: 40px;
-            font-size: 20px;
         }
     }
     .address-row1-russia{
@@ -183,7 +187,7 @@
                     input{
                         width: 590px;
                     }
-                }           
+                }
             }
             .form{
             margin-right: 50px;
@@ -223,7 +227,7 @@
                 width: 450px;
                 h2{
                     font-size: 36px;
-                    line-height: 55px; 
+                    line-height: 55px;
                     margin-bottom: 50px;
                 }
                 a{
@@ -243,7 +247,7 @@
                             font-size: 0 !important;
                         }
                     }
-                }   
+                }
             }
             .contact-image{
                 width: 450px;
@@ -262,7 +266,7 @@
         }
         .contact-section2{
             display: flex;
-            margin-bottom: 100px;        
+            margin-bottom: 100px;
             margin-top: 140px;
             .map-side{
                 margin-right: 60px;
@@ -307,7 +311,7 @@
                 font-size: 16px;
             }
         }
-        
+
     }
 }
 @media only screen and (max-width: 1024px) {
@@ -315,7 +319,7 @@
         .contact-section1{
             justify-content: space-between;
             .form{
-                width: 350px;   
+                width: 350px;
                 form{
                     input::placeholder{
                         font-size: 14px;
@@ -359,8 +363,8 @@
                         width: 220px;
                         margin-left: 0;
                     }
-                    
-                    
+
+
                 }
             }
             .adresses-row-russia-israel{
@@ -453,12 +457,12 @@
                 }
             }
         }
-        
+
     }
 }
 .ajax-button{
     position:relative;
-    display: flex;    
+    display: flex;
     justify-content: center;
     width: 175px;
     margin-top: 50px;
@@ -466,7 +470,7 @@
 }
 .submit{
     -webkit-appearance: none  !important;
-    -moz-appearance: none !important; 
+    -moz-appearance: none !important;
     appearance: none;
     background-color:#fff !important;
     border:4px solid #2B2B2B !important;
@@ -508,7 +512,7 @@
         background-color: #fff !important;
     }
 }
-  
+
 @keyframes rotateAnimation {
     0%   {transform: rotate(0deg);}
     100% {transform: rotate(360deg);}
@@ -522,7 +526,7 @@ left:45%;
 -webkit-transform:scaleX(0) !important;
 transform:scaleX(0) !important;
 }
-  
+
 .finish{
 -webkit-transform:scaleX(1) !important;
 transform:scaleX(1) !important;
