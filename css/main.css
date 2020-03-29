@@ -1304,6 +1304,8 @@ h1, p, h2, h3, h4, h5, h6, a, ul, li {
     flex-direction: column;
     padding-bottom: 220px;
     width: 970px; }
+    .article-header .article-header-content .back {
+      color: #fff; }
     .article-header .article-header-content p {
       font-size: 17px;
       margin-bottom: 5px; }
