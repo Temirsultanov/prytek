@@ -10,7 +10,7 @@
     overflow: hidden;
     min-height: 100%; }
     .profile-main .profile-image img {
-      vertical-align: bottom;
+      vertical-align: bottom !important;
       min-width: 100%;
       transform-origin: 50%, 0%;
       min-height: 100%; }
@@ -27,7 +27,7 @@
     color: #2B2B2B;
     width: 50%;
     padding-bottom: 40px;
-    padding-left: 95px; }
+    padding-left: 60px; }
     .profile-main .profile-content .back {
       display: flex;
       margin-top: 50px;
@@ -62,12 +62,21 @@
         margin-bottom: 0; }
       .profile-main .profile-content h4.mb30 {
         margin-bottom: 30px; }
+    .profile-main .profile-content p {
+      font-size: 20px;
+      line-height: 30px;
+      width: 600px; }
+    .profile-main .profile-content .previous {
+      margin-top: 20px;
+      margin-bottom: 20px; }
     .profile-main .profile-content ul {
-      list-style: disc; }
+      list-style: disc;
+      margin-left: 30px; }
       .profile-main .profile-content ul p {
         font-size: 20px;
         line-height: 40px;
-        width: 660px; }
+        width: 660px;
+        padding-right: 15px; }
         .profile-main .profile-content ul p .bold {
           font-weight: bold; }
 
@@ -126,7 +135,7 @@
       font-size: 16px;
       line-height: 26px;
       margin-bottom: 10px;
-      width: 360px; }
+      width: 340px; }
     .profile-main .profile-content .yair-p-left {
       padding-left: 10px; }
     .profile-main .profile-content p {
@@ -149,6 +158,8 @@
   .profile-header .logo svg path {
     fill: white; }
   .profile-main .profile-content {
+    display: flex;
+    flex-direction: column;
     padding-left: 0px;
     width: 100%;
     margin-top: 0; }
@@ -162,6 +173,7 @@
       position: relative;
       padding-top: 90px;
       color: white;
+      margin-bottom: 30px;
       padding-left: 20px;
       padding-bottom: 30px; }
       .profile-main .profile-content .profile-name-photo.profile-arnon-photo {
@@ -190,6 +202,8 @@
         background-image: url(../images/profile/alexander-bg.png); }
       .profile-main .profile-content .profile-name-photo.profile-phina-photo {
         background-image: url(../images/profile/phina-bg.png); }
+      .profile-main .profile-content .profile-name-photo.profile-ben-photo {
+        background-image: url(../images/profile/ben-bg.jpg); }
       .profile-main .profile-content .profile-name-photo .back h5 {
         color: white;
         font-size: 18px; }
@@ -213,24 +227,28 @@
       margin-top: 50px;
       margin-left: auto;
       margin-right: auto; }
-    .profile-main .profile-content ul li p {
-      width: 320px;
-      width: 70%;
-      font-size: 14px;
-      line-height: 24px;
-      margin-bottom: 10px; }
     .profile-main .profile-content ul {
-      margin-top: 40px; }
-    .profile-main .profile-content ul li {
+      margin-left: 0;
+      align-items: center;
       display: flex;
-      justify-content: center; }
+      flex-direction: column; }
+    .profile-main .profile-content ul li {
+      width: 70%; }
     .profile-main .profile-content .yair-p-left {
       padding-left: 10px; }
     .profile-main .profile-content p {
-      min-width: 320px;
+      min-width: 240px;
       font-size: 16px;
-      width: 70%;
+      width: 80%;
       line-height: 26px;
+      align-self: center; }
+    .profile-main .profile-content .previous {
+      margin-top: 10px; }
+    .profile-main .profile-content ul li p {
+      width: 100%;
+      padding-right: 0;
+      font-size: 14px;
+      line-height: 24px;
       margin-bottom: 10px; }
   .profile-main .profile-image {
     display: none; } }

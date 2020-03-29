@@ -2,6 +2,7 @@
 .profile-header{
     padding-bottom: 0;
 }
+
 .profile-main{
     display: flex;
     .profile-image{
@@ -11,7 +12,7 @@
         overflow: hidden;
         min-height: 100%;
         img{
-            vertical-align: bottom;
+            vertical-align: bottom !important;
             min-width: 100%;
             transform-origin: 50%, 0%;
             min-height: 100%;
@@ -32,7 +33,7 @@
         color: $dark;
         width: 50%;
         padding-bottom: 40px;
-        padding-left: 95px;
+        padding-left: 60px;
         .back{
             display: flex;
             margin-top: 50px;
@@ -79,12 +80,23 @@
                 margin-bottom: 30px;
             }
         }
+        p{
+            font-size: 20px;
+            line-height: 30px;
+            width: 600px;
+        }
+        .previous{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
         ul{
             list-style: disc;
+            margin-left: 30px;
             p{
                 font-size: 20px;
                 line-height: 40px;
                 width: 660px;
+                padding-right: 15px;
                 .bold{
                     font-weight: bold;
                 }
@@ -174,7 +186,7 @@
                 font-size: 16px;
                 line-height: 26px;
                 margin-bottom: 10px;
-                width: 360px;
+                width: 340px;
             }
             .yair-p-left{
                 padding-left: 10px;
@@ -216,6 +228,9 @@
     }
     .profile-main{
         .profile-content{
+            display: flex;
+            flex-direction: column;
+
             .profile-name-photo{
                 height: 111vw;
                 box-sizing: border-box;
@@ -261,10 +276,14 @@
                 &.profile-phina-photo{
                     background-image: url(../images/profile/phina-bg.png);   
                 }
+                &.profile-ben-photo{
+                    background-image: url(../images/profile/ben-bg.jpg);   
+                }
                 background-size: cover;
                 position: relative;
                 padding-top: 90px;
                 color: white;
+                margin-bottom: 30px;
                 padding-left: 20px;
                 padding-bottom: 30px;
                 .back{
@@ -302,28 +321,36 @@
                 margin-left: auto;
                 margin-right: auto;
             }
-            ul li p{
-                width: 320px;
-                width: 70% ;
-                font-size: 14px;
-                line-height: 24px;
-                margin-bottom: 10px;
-            }
+            
             ul{
-                margin-top: 40px;
+                margin-left: 0;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
             }
             ul li{
-                display: flex;
-                justify-content: center;
+                width: 70%;
+
             }
             .yair-p-left{
                 padding-left: 10px;
             }
             p{
-                min-width: 320px;
+                min-width: 240px;
                 font-size: 16px;
-                width: 70%;
+                width: 80%;
                 line-height: 26px;
+                align-self: center;
+            }
+            .previous{
+                margin-top: 10px;
+            }
+            ul li p{
+                // max-width: 320px;
+                width: 100%;
+                padding-right: 0;
+                font-size: 14px;
+                line-height: 24px;
                 margin-bottom: 10px;
             }
         }

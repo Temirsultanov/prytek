@@ -3,13 +3,14 @@
 
 .about-header {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   background-size: cover;
   background-position: 50% 50%; }
 
 .header-about-content {
   padding-top: 190px;
-  color: white; }
+  color: white;
+  margin-left: 180px; }
   .header-about-content p {
     font-size: 22px;
     line-height: 35px;
@@ -17,6 +18,8 @@
     width: 820px; }
   .header-about-content .h1-2 {
     width: 1100px; }
+    .header-about-content .h1-2 .the-future {
+      display: block; }
 
 .main-areas {
   display: flex;
@@ -166,16 +169,18 @@
     left: -30px; } }
 
 @media only screen and (max-width: 1280px) {
-  .about-header .header-about-content h1 {
-    font-size: 72px;
-    line-height: 89px;
-    width: 890px; }
-    .about-header .header-about-content h1.the-future {
-      margin-bottom: 40px; }
-  .about-header .header-about-content p {
-    font-size: 20px;
-    line-height: 35px;
-    width: 890px; }
+  .about-header .header-about-content {
+    margin-left: 120px; }
+    .about-header .header-about-content h1 {
+      font-size: 72px;
+      line-height: 89px;
+      width: 890px; }
+      .about-header .header-about-content h1.the-future {
+        margin-bottom: 40px; }
+    .about-header .header-about-content p {
+      font-size: 20px;
+      line-height: 35px;
+      width: 890px; }
   .section2-about .main-areas .main-areas-cont .main-areas-box:not(:last-child) {
     margin-right: 25px; }
   .section2-about .main-areas .main-areas-cont .main-areas-box {
@@ -206,18 +211,22 @@
     max-height: 50vw; } }
 
 @media only screen and (max-width: 1024px) {
-  .about-header .header-about-content {
-    padding-top: 120px; }
-    .about-header .header-about-content h1 {
-      font-size: 64px;
-      line-height: 85px;
-      width: 700px; }
-      .about-header .header-about-content h1.the-future {
-        margin-bottom: 20px; }
-    .about-header .header-about-content p {
-      font-size: 16px;
-      line-height: 28px;
-      width: 700px; }
+  .about-header {
+    justify-content: center; }
+    .about-header .header-about-content {
+      padding-top: 120px;
+      width: 740px;
+      margin-left: 0; }
+      .about-header .header-about-content h1 {
+        font-size: 64px;
+        line-height: 85px;
+        width: 700px; }
+        .about-header .header-about-content h1.the-future {
+          margin-bottom: 20px; }
+      .about-header .header-about-content p {
+        font-size: 16px;
+        line-height: 28px;
+        width: 700px; }
   .section2-about .main-areas {
     justify-content: space-around;
     flex-wrap: wrap; }
@@ -274,14 +283,15 @@
     padding-right: 20px;
     min-height: 100vh;
     padding-bottom: 50px;
-    background-position: -100% 0; }
-    .about-header .header-about-content h1 {
+    background-position: 100% 0; }
+    .about-header .header-about-content h1.h1-2 {
       font-size: 46px;
       line-height: 57px;
       margin-right: 0;
-      width: 100%; }
-      .about-header .header-about-content h1.the-future {
-        margin-bottom: 20px; }
+      width: 100%;
+      margin-bottom: 20px; }
+      .about-header .header-about-content h1.h1-2 .the-future {
+        display: inline; }
     .about-header .header-about-content p {
       font-size: 14px;
       line-height: 28px;
