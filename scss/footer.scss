@@ -109,7 +109,7 @@ footer{
                         margin-bottom: 80px;
                     }
                     &:nth-child(5) {
-                        margin-bottom: 80px;
+                        margin-bottom: 110px;
                     }
                     h5{
                         font-size: 12px;
@@ -247,7 +247,11 @@ footer{
                     max-height: 370px;
                     .footer-address:nth-child(5){
                         margin-bottom: 0;
-                        margin-top: 50px;
+                        margin-top: 80px;
+                    }
+                    .footer-address:nth-child(6){
+                        margin-bottom: 0;
+                        margin-top: 30px;
                     }
                 }
             }
@@ -284,6 +288,7 @@ footer{
                     li:nth-child(4){
                         margin-top: 40px;
                         margin-bottom: 50px;
+                        width: 320px;
                     }
                 }
             }

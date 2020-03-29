@@ -3050,7 +3050,7 @@ button:focus {
     display: none; }
   .contact-main .contact-india {
     align-self: flex-end;
-    margin-top: 140px;
+    margin-top: 175px;
     margin-bottom: 0;
     width: 270px; }
 
@@ -3064,7 +3064,7 @@ button:focus {
   .contact-main .contact-section2 .map-side .map-image img {
     width: 600px; }
   .contact-main .contact-section2 .map-side .contact-india {
-    margin-top: 230px; }
+    margin-top: 263px; }
   .contact-main .contact-section2 .adresses .address200 {
     width: 200px; }
     .contact-main .contact-section2 .adresses .address200 p {
@@ -3117,7 +3117,7 @@ button:focus {
           width: 100%; }
       .contact-main .contact-section2 .map-side .contact-india {
         align-self: flex-end;
-        margin-top: 155px;
+        margin-top: 181px;
         margin-bottom: 0;
         width: 200px; }
     .contact-main .contact-section2 .adresses-row {
@@ -3597,7 +3597,7 @@ footer {
           footer .footer-main .footer-col-addresses .grid .footer-address:nth-child(4) {
             margin-bottom: 80px; }
           footer .footer-main .footer-col-addresses .grid .footer-address:nth-child(5) {
-            margin-bottom: 80px; }
+            margin-bottom: 110px; }
           footer .footer-main .footer-col-addresses .grid .footer-address h5 {
             font-size: 12px;
             font-weight: bold;
@@ -3685,7 +3685,10 @@ footer {
           max-height: 370px; }
           footer .footer-main .footer-col-addresses .grid .footer-address:nth-child(5) {
             margin-bottom: 0;
-            margin-top: 50px; } }
+            margin-top: 80px; }
+          footer .footer-main .footer-col-addresses .grid .footer-address:nth-child(6) {
+            margin-bottom: 0;
+            margin-top: 30px; } }
 
 @media only screen and (max-width: 767px) {
   footer {
@@ -3706,7 +3709,8 @@ footer {
           margin-top: 40px; }
         footer .footer-main .footer-col-addresses .grid li:nth-child(4) {
           margin-top: 40px;
-          margin-bottom: 50px; }
+          margin-bottom: 50px;
+          width: 320px; }
     footer .footer-copy {
       display: flex;
       flex-direction: column-reverse;
