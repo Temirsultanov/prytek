@@ -3074,10 +3074,17 @@ button:focus {
   .contact-main .address-map-israel {
     display: none; }
   .contact-main .contact-india {
-    align-self: flex-end;
-    margin-top: 214px;
+    margin-top: 255px;
     margin-bottom: 0;
-    width: 270px; }
+    width: 250px; }
+    .contact-main .contact-india:last-child {
+      width: 220px; }
+
+.contacts-map {
+  display: flex;
+  align-self: start;
+  justify-content: space-around;
+  width: 100%; }
 
 @media only screen and (max-width: 1400px) {
   .contact-main .contact-section1 .form form input {
@@ -3089,7 +3096,7 @@ button:focus {
   .contact-main .contact-section2 .map-side .map-image img {
     width: 600px; }
   .contact-main .contact-section2 .map-side .contact-india {
-    margin-top: 303px; }
+    margin-top: 24px; }
   .contact-main .contact-section2 .adresses .address200 {
     width: 200px; }
     .contact-main .contact-section2 .adresses .address200 p {
@@ -3141,8 +3148,7 @@ button:focus {
         .contact-main .contact-section2 .map-side .map-image img {
           width: 100%; }
       .contact-main .contact-section2 .map-side .contact-india {
-        align-self: flex-end;
-        margin-top: 221px;
+        margin-top: 24px;
         margin-bottom: 0;
         width: 200px; }
     .contact-main .contact-section2 .adresses-row {
@@ -3154,6 +3160,8 @@ button:focus {
         margin-left: 40px; }
   .contact-main .address {
     width: 250px; }
+    .contact-main .address a {
+      font-size: 16px; }
     .contact-main .address h5 {
       font-size: 17px;
       line-height: 30px;
@@ -3179,13 +3187,16 @@ button:focus {
     .contact-main .contact-section2 .map-side {
       display: flex;
       align-items: flex-start;
-      justify-content: space-around;
+      justify-content: space-evenly;
       margin-right: 0;
       flex-direction: row-reverse; }
       .contact-main .contact-section2 .map-side .map-image {
-        width: 440px; }
+        width: 220px;
+        align-self: center; }
       .contact-main .contact-section2 .map-side .contact-india {
         margin-top: 0;
+        display: none; }
+      .contact-main .contact-section2 .map-side .contacts-map {
         display: none; }
       .contact-main .contact-section2 .map-side .address-map-israel {
         display: block;
