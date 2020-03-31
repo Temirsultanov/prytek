@@ -73,7 +73,7 @@ footer{
                 text-transform: uppercase;
                 flex-wrap: wrap;
                 flex-direction: column;
-                max-height: 540px;
+                max-height: 650px;
                 justify-content: flex-start;
                 > li:nth-child(1){
                     order: 1;
@@ -96,6 +96,9 @@ footer{
                 > li:nth-child(7){
                     order: 5;
                 }
+                > li:nth-child(8){
+                    order: 8;
+                }
                 .footer-address{
                     // margin-right: 70px;
                     width: 190px;
@@ -105,16 +108,24 @@ footer{
                     &:nth-child(6){
                         margin-bottom: 0px;
                     }
+                    &:nth-child(1){
+                        margin-bottom: 90px;
+                    }
                     &:nth-child(4) {
-                        margin-bottom: 80px;
+                        margin-bottom: 40px;
                     }
                     &:nth-child(5) {
-                        margin-bottom: 110px;
+                        margin-bottom: 140px;
                     }
                     h5{
                         font-size: 12px;
                         font-weight: bold;
                         margin-bottom: 20px;
+                    }
+                    a{
+                        text-transform: lowercase;
+                        text-decoration: underline;
+                        font-size: 12px;
                     }
                     p{
                         font-size: 12px;
@@ -231,7 +242,7 @@ footer{
                     ul{
                         display: flex;
                         li:not(:last-child) a{
-                            margin-right: 25px;
+                            margin-right: 10px;
                         }
                     }
                 }
@@ -241,14 +252,17 @@ footer{
                 justify-content: space-between;
                 .grid{
                     width: 100%;
-                    max-height: 370px;
+                    max-height: 460px;
                     .footer-address:nth-child(5){
                         margin-bottom: 0;
-                        margin-top: 80px;
+                        margin-top: 114px;
                     }
                     .footer-address:nth-child(6){
                         margin-bottom: 0;
-                        margin-top: 30px;
+                        margin-top: 64px;
+                    }
+                    .footer-address:nth-child(8){
+                        width: 130px ;
                     }
                 }
             }

@@ -383,6 +383,10 @@ button:focus {
     text-align: center;
     margin-bottom: 100px; }
 
+@media only screen and (min-width: 2000px) {
+  .mainsectors-main .peoples .people-row-2 {
+    margin-left: 80px; } }
+
 @media only screen and (max-width: 1400px) {
   .mainsectors-header .header-mainsectors-content {
     width: 1160px; }

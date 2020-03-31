@@ -339,6 +339,7 @@ h1{
         a{
             color: $dark;
             display: flex;
+            align-items: center;
             img{
                 animation: arrow-right 3s infinite;
                 animation-play-state: paused;
@@ -471,6 +472,7 @@ h1{
             }
             a img{
                 width: 15px;
+                height: auto;
             }
             a svg{
                 width: 15px;

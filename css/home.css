@@ -151,6 +151,7 @@
           min-width: 50%;
           background-image: url(../images/home/section4-1.png);
           background-size: cover;
+          background-position: 10% 0;
           background-repeat: no-repeat; }
         .home-4 .grid .left .top .home-4_text {
           width: 50%;
@@ -280,6 +281,7 @@
     overflow: hidden; }
     .home-4 .grid .right .home-4_image2 img {
       min-height: 350px;
+      min-width: 100%;
       width: auto; }
   .home-4 .grid .right .bottom {
     display: flex;
@@ -287,7 +289,7 @@
     padding-left: 70px;
     padding-right: 70px;
     padding-top: 40px;
-    padding-bottom: 80px; }
+    padding-bottom: 40px; }
     .home-4 .grid .right .bottom .date {
       font-size: 14px; }
     .home-4 .grid .right .bottom h3 {

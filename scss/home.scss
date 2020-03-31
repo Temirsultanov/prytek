@@ -151,12 +151,13 @@
             .home-4_image2{
                 img{
                     width: 100%;
+                    // max-height: 200px;
                 }
             }
             .bottom{
                 padding-top: 60px;
                 padding-left: 80px;
-                padding-right: 80px;
+                padding-right:  80px;
                 padding-bottom: 50px;
                 color: $dark;
                 .date{
@@ -189,7 +190,9 @@
                     min-width: 50%; 
                     background-image: url(../images/home/section4-1.png);
                     background-size: cover;
+                    background-position: 10% 0;
                     background-repeat: no-repeat;
+                    // height: 100%;
                 }
                 .home-4_text{
                     width: 50%;
@@ -373,7 +376,10 @@
                 overflow: hidden;
                 img{
                     min-height: 350px;
-                    width: auto;    
+                    min-width: 100%;
+                    width: auto;
+                    // min-height: 100%;
+                    
                 }
             }
             .bottom{
@@ -382,7 +388,7 @@
                 padding-left: 70px;
                 padding-right: 70px;
                 padding-top: 40px;
-                padding-bottom: 80px;
+                padding-bottom: 40px;
                 .date{
                     font-size: 14px;
                 }
